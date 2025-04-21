@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.4",
+    "@prettier/plugin-xml": "^3.4.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-sh": "^0.17.1",
+    "vite": "^6.2.0",
+    "vite-plugin-live-reload": "^3.0.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "core-js-pure",
+      "esbuild"
+    ]
+  }
+}
