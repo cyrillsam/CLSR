@@ -65,7 +65,7 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   margin-right: auto; 
   line-height: 1.8;
   font-weight: bold;">
-    ANIMATION.
+    ANIMATION
   </p>  
   <div class="video-container">
   <iframe 
