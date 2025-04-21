@@ -129,7 +129,7 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   gap: 40px;
   flex-wrap: wrap; /* Optional: Helps on smaller screens */
 ">
-  <img src="img/logo/ME.jpg" alt="Artist" style="
+  <img src="/img/logo/me.jpg" alt="Artist" style="
     width: 40%; 
     height: auto; 
     border-radius: 12px; 
