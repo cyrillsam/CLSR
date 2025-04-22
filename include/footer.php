@@ -1,15 +1,87 @@
 <!-- Add FontAwesome CDN link in the <head> section -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+<style>
+  .footer-widget {
+    padding: 50px 0;
+    background-color: #050505;
+    color: #ffffff;
+  }
+
+  .footer-logo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .quick-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .quick-links a:hover {
+    color: #f1c40f;
+  }
+
+  .social-links {
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-links li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s;
+  }
+
+  .social-links li a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-facebook { background-color: #1877F2; }
+  .social-pinterest { background-color: #E60023; }
+  .social-instagram { background-color: #C13584; }
+  .social-tiktok { background-color: #000000; }
+
+  @media (max-width: 767.98px) {
+    .footer-logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .quick-links {
+      text-align: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+</style>
+
 <!-- Footer Widget Start -->
-<div class="footer-widget" style="padding: 50px 0; background-color:#050505;">
-  <div class="container" style="margin-top: 20px;">
+<div class="footer-widget">
+  <div class="container mt-4">
     <div class="row">
       <!-- Logo -->
-      <div class="col-md-6 d-flex flex-column align-items-start">
-        <div style="max-width: 300px;">
-          <img src="img/logo/logo_footer.png" alt="Your Logo" style="width: 100%;">
-        </div>
+      <div class="col-md-6 footer-logo d-flex flex-column align-items-md-start align-items-center">
+        <img src="img/logo/logo_footer.png" alt="Your Logo">
       </div>
 
       <!-- Quick Links + Social -->
@@ -17,58 +89,32 @@
         <div class="row">
           <div class="col-sm-6">
             <ul class="quick-links list-unstyled">
-              <li style="margin-bottom: 10px;">
-                <a href="#" style="color: #ffffff; text-decoration: none; font-size: 1.0rem;">Dashboard</a>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <a href="#" style="color: #ffffff; text-decoration: none; font-size: 1.0rem;">Category</a>
-              </li>
+              <li class="mb-2"><a href="#">Dashboard</a></li>
+              <li class="mb-2"><a href="#">Category</a></li>
             </ul>
           </div>
           <div class="col-sm-6">
             <ul class="quick-links list-unstyled">
-              <li style="margin-bottom: 10px;">
-                <a href="#" style="color: #ffffff; text-decoration: none; font-size: 1.0rem;">About Me</a>
-              </li>
-              <li style="margin-bottom: 10px;">
-                <a href="#" style="color: #ffffff; text-decoration: none; font-size: 1.0rem;">Contact Us</a>
-              </li>
+              <li class="mb-2"><a href="#">About Me</a></li>
+              <li class="mb-2"><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Social Links - Big Circular Style -->
-        <ul class="social-links list-unstyled mt-4" style="padding-left: 0; display: flex; gap: 20px;">
-          <li>
-            <a href="#" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #1877F2; color: white; font-size: 2rem; transition: transform 0.3s;">
-              <i class="fab fa-facebook-f" aria-label="Facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #E60023; color: white; font-size: 2rem; transition: transform 0.3s;">
-              <i class="fab fa-pinterest-p" aria-label="Pinterest"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #C13584; color: white; font-size: 2rem; transition: transform 0.3s;">
-              <i class="fab fa-instagram" aria-label="Instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #000000; color: white; font-size: 2rem; transition: transform 0.3s;">
-              <i class="fab fa-tiktok" aria-label="TikTok"></i>
-            </a>
-          </li>
+        <!-- Social Links -->
+        <ul class="social-links list-unstyled mt-4">
+          <li><a href="#" class="social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="social-pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="#" class="social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="social-tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- Bottom Bar -->
-  <div class="container" style="background-color: #050505; margin-top: 30px;">
-    <p class="m-0 text-center" style="color: #ffffff;">
-      &copy; CLSR 2025. All Rights Reserved.
-    </p>
+  <div class="container footer-bottom">
+    <p class="m-0">&copy; CLSR 2025. All Rights Reserved.</p>
   </div>
 </div>
 <!-- End of Footer Widget -->
