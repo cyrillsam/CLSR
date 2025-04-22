@@ -150,24 +150,24 @@
   transition: all 0.3s ease-in-out;
 }
 .logo {
-  transform: scale(2.5);
+  transform: scale(2.5); /* Original scale for desktop */
   transition: transform 0.3s ease-in-out;
 }
+.logo {
+  pointer-events: none; /* Makes sure logo doesn't intercept clicks */
+}
 
-/* Logo responsiveness */
-@media (max-width: 1200px) {
+
+/* Mobile-specific logo scaling */
+@media (max-width: 1000px) {
   .logo {
-    transform: scale(1.6);
+    transform: scale(2.0); /* Larger logo on smaller screens */
   }
 }
-@media (max-width: 992px) {
-  .logo {
-    transform: scale(1.4);
-  }
-}
+
 @media (max-width: 768px) {
   .logo {
-    transform: scale(1.2);
+    transform: scale(2.5); /* Even bigger logo on smaller screens */
   }
 }
 
