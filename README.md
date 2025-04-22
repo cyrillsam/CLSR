@@ -1,3 +1,4 @@
+
 # CLSR Website
 
-A website that i create for my portfolio
+A website that I created for my portfolio.
