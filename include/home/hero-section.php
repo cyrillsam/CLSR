@@ -43,6 +43,25 @@
   </div>
 
 </section>
+<style>
+/* For Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: 100% 50%; /* Adjusts image size to fit width while keeping the height smaller */
+    background-position: center center; /* Focuses the center of the image */
+    background-attachment: scroll; /* Disables parallax effect for mobile */
+  }
+
+  .hero-content {
+    margin-left: 5vw; /* Adjust left margin for mobile to make the text more centered */
+    max-width: 90vw;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Adjust font size for mobile */
+  }
+}
+</style>
 
 
 
