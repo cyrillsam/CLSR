@@ -103,10 +103,10 @@
 
         <!-- Social Links -->
         <ul class="social-links list-unstyled mt-4">
-          <li><a href="#" class="social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#" class="social-pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-          <li><a href="#" class="social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#" class="social-tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://www.facebook.com/DigiandReal" class="social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://ph.pinterest.com/Beemo_theartist/" class="social-pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.instagram.com/bmo_theartist/" class="social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@aiirreee_cc?is_from_webapp=1&sender_device=pc" class="social-tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
         </ul>
       </div>
     </div>

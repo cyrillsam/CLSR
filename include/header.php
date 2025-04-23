@@ -36,10 +36,10 @@
 
 <!-- Mobile Nav Modal -->
 <div class="modal fade" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title w-100 text-center" id="mobileNavModalLabel">Menu</h5>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header d-flex justify-content-between align-items-center">
+        <h5 class="modal-title mx-auto" id="mobileNavModalLabel">Menu</h5>
         <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="modal" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -47,7 +47,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list-unstyled text-center">
+        <ul class="list-unstyled">
           <li><a href="#" class="nav-link-custom">Dashboard</a></li>
           <li><a href="#" class="nav-link-custom">Category</a></li>
           <li><a href="#" class="nav-link-custom">About Me</a></li>
@@ -58,13 +58,14 @@
   </div>
 </div>
 
+
 <!-- Bootstrap JS (including Popper.js) -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 <style>
-
-  /* Enhanced close button style */
+  
+/* Enhanced close button style */
 .custom-close-btn {
   background-color: transparent;
   border: none;
@@ -131,6 +132,7 @@
     max-width: 80%; /* Adjust the modal width on small screens */
   }
 }
+
 /* Sticky header */
 .header-logo-menu.sticker {
   position: fixed;
@@ -156,7 +158,6 @@
 .logo {
   pointer-events: none; /* Makes sure logo doesn't intercept clicks */
 }
-
 
 /* Mobile-specific logo scaling */
 @media (max-width: 1000px) {
@@ -223,4 +224,5 @@
 body {
   padding-top: 120px;
 }
+
 </style>

@@ -129,21 +129,21 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   gap: 40px;
   flex-wrap: wrap; /* Optional: Helps on smaller screens */
 ">
-  <img src="/img/logo/me.jpg" alt="Artist" style="
-    width: 40%; 
-    height: auto; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    flex-shrink: 0;
-  ">
+<img src="/img/logo/me.jpg" alt="Artist" class="behind-the-canvas-img" style="
+  width: 40%; 
+  height: auto; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+">
   
-  <p style="
-    font-size: 1.2rem; 
-    text-align: left; 
-    line-height: 1.8; 
-    max-width: 500px; 
-    padding: 10px;
-  ">
+<p class="behind-the-canvas-text" style="
+  font-size: 1.2rem; 
+  text-align: left; 
+  line-height: 1.8; 
+  max-width: 500px; 
+  padding: 10px;
+">
     Not finding what you're looking for? <br>
     There's a whole universe waiting behind the button below. <br><br>
     From the fine lines of UI design to the vivid world of concept art, each category is a new chapter in the story I create. <br><br>
@@ -171,6 +171,17 @@ Scroll down, click around, and discover the skills, style, and soul behind every
 </div>
 
   <style>
+    @media (max-width: 768px) {
+  .behind-the-canvas-img {
+    width: 80% !important; /* Make it noticeably larger */
+    margin-bottom: 20px;
+  }
+
+  .behind-the-canvas-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
     .video-container {
       display: flex;
       justify-content: center;

@@ -12,7 +12,27 @@ $nav_items = [
     "link" => "#",
     "submenu" => [
       [
-        "label" => "Example Product",
+        "label" => "Animation",
+        "link" => "#",
+      ],
+      [
+        "label" => "Digital Arts",
+        "link" => "#",
+      ],
+      [
+        "label" => "Pencil and Paper",
+        "link" => "#",
+      ],
+      [
+        "label" => "UI Design",
+        "link" => "#",
+      ],
+      [
+        "label" => "Photography",
+        "link" => "#",
+      ],
+      [
+        "label" => "Certificate",
         "link" => "#",
       ],
     ],
@@ -56,79 +76,116 @@ $nav_items = [
 <?php endforeach; ?>
 
 <style>
-  /* Parent <li> hover to show submenu */
+  /* Main nav item base style */
+.nav-link-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+/* Smooth hover movement and color change */
+.nav-link-custom:hover {
+  color: #5693c9;
+  transform: translateX(5px);
+}
+
+/* Submenu dropdown styled as a modern modal */
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 320px;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* Trigger visibility on hover */
 li:hover > .sub-menu {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Submenu dropdown like modal */
-.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 15px; /* Rounded corners like a modal */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  top: 100%;
-  left: 0;
-  min-width: 200px;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(10px);
-}
-
 /* Submenu items */
 .sub-menu li {
   list-style: none;
-  padding: 8px 12px;
-  transition: background-color 0.2s ease;
-  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
+/* Last item spacing fix */
+.sub-menu li:last-child {
+  margin-bottom: 0;
+}
+
+/* Item text style */
+.sub-menu li span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.4px;
+  transition: color 0.2s ease;
+}
+
+/* Hover effects */
 .sub-menu li:hover {
-  background-color: #f0f8ff; /* Light blue on hover */
+  background: linear-gradient(135deg, #5693c9, #3b6ea5);
+  transform: translateX(5px);
   cursor: pointer;
 }
 
-/* Link or span in submenu */
-.sub-menu li span {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
+.sub-menu li:hover span {
+  color: #fff;
 }
 
-/* Responsive styles */
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .nav-link-custom {
-    font-size: 14px; /* Smaller font size for smaller screens */
-    padding: 8px; /* Adjust padding */
-  }
-
   .sub-menu {
-    min-width: 150px; /* Adjust submenu width */
+    min-width: 220px;
+    padding: 1.5rem 1rem;
   }
 
   .sub-menu li {
-    padding: 6px 10px; /* Adjust submenu item padding */
+    padding: 8px 12px;
+  }
+
+  .sub-menu li span {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .nav-link-custom {
-    font-size: 12px; /* Even smaller font size for very small screens */
-    padding: 6px; /* Further adjust padding */
-  }
-
   .sub-menu {
-    min-width: 120px; /* Further adjust submenu width */
+    min-width: 100%;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1.5rem;
   }
 
   .sub-menu li {
-    padding: 4px 8px; /* Further adjust submenu item padding */
+    padding: 12px;
+  }
+
+  .sub-menu li span {
+    font-size: 14px;
   }
 }
+
 </style>
