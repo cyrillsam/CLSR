@@ -36,7 +36,7 @@
 
 <!-- Mobile Nav Modal -->
 <div class="modal fade" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-top">
     <div class="modal-content text-center">
       <div class="modal-header d-flex justify-content-between align-items-center">
         <h5 class="modal-title mx-auto" id="mobileNavModalLabel">Menu</h5>
@@ -48,8 +48,25 @@
       </div>
       <div class="modal-body">
         <ul class="list-unstyled">
-          <li><a href="#" class="nav-link-custom">Dashboard</a></li>
-          <li><a href="#" class="nav-link-custom">Category</a></li>
+          <li><a href="/include/category/animation.php" class="nav-link-custom">Dashboard</a></li>
+          <li>
+  <button class="nav-link-custom category-toggle w-100 text-center d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="false" aria-controls="categoryCollapse">
+    Category
+    <i class="fas fa-chevron-down ms-2"></i>
+  </button>
+  <div class="collapse mt-2 bg-white rounded" id="categoryCollapse">
+    <ul class="list-unstyled ps-3 mb-2">
+      <li><a href="animation.php" class="nav-link-custom sub-link">Animation</a></li>
+      <li><a href="digital-arts.php" class="nav-link-custom sub-link">Digital Arts</a></li>
+      <li><a href="pencil-paper.php" class="nav-link-custom sub-link">Pencil and Paper</a></li>
+      <li><a href="ui-design.php" class="nav-link-custom sub-link">UI Design</a></li>
+      <li><a href="photography.php" class="nav-link-custom sub-link">Photography</a></li>
+      <li><a href="certificate.php" class="nav-link-custom sub-link">Certificate</a></li>
+    </ul>
+  </div>
+</li>
+
+
           <li><a href="#" class="nav-link-custom">About Me</a></li>
           <li><a href="#" class="nav-link-custom">Contact Us</a></li>
         </ul>
@@ -58,13 +75,86 @@
   </div>
 </div>
 
+<style>
+  .modal-dialog-top {
+    margin: 1rem auto; /* Adjust the margin to position the modal closer to the top */
+  }
+</style>
+
 
 <!-- Bootstrap JS (including Popper.js) -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 <style>
-  
+/* Remove border & keep white background */
+#categoryCollapse {
+  border: none;
+  background-color: #fff;
+}
+
+/* Override nav-link styles for sub-links */
+.sub-link {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: transparent;
+  border: none;
+}
+
+/* Hover effect for sub-items */
+.sub-link:hover {
+  background-color: #f0f0f0; /* light hover bg */
+  color: #000; /* black text on hover */
+}
+
+/* Style for Category toggle */
+.category-toggle {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+
+/* Toggle arrow rotation on expand */
+.category-toggle[aria-expanded="true"] .fas.fa-chevron-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Modal content background override */
+.modal-content {
+  background-color:rgb(252, 252, 252); /* soft off-white/grey-blue tone */
+  border: none;
+}
+
+/* Optional: make Category section even lighter for contrast */
+#categoryCollapse {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.43); /* light shadow to float it */
+}
+
+/* Optional: Darker overlay to dim background */
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.6); /* a bit darker than before */
+}
+
+.modal-content {
+  animation: modalFade 0.4s ease-in-out;
+}
+
+@keyframes modalFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  .nav-link-custom[aria-expanded="true"] .fas.fa-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
 /* Enhanced close button style */
 .custom-close-btn {
   background-color: transparent;

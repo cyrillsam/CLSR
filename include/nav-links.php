@@ -5,7 +5,6 @@ $nav_items = [
   [
     "label" => "Dashboard",
     "link" => "#",
-    
   ],
   [
     "label" => "Category",
@@ -13,7 +12,7 @@ $nav_items = [
     "submenu" => [
       [
         "label" => "Animation",
-        "link" => "#",
+        "link" => "/include/category/animation.php",
       ],
       [
         "label" => "Digital Arts",
@@ -45,8 +44,9 @@ $nav_items = [
     "label" => "Contact Us",
     "link" => "#",
   ],
-  
 ];
+
+// Optional: if you're echoing/using it later, you're good to go!
 ?>
 
 <?php foreach ($nav_items as $item): ?>
