@@ -1,9 +1,10 @@
 <!-- Header Section -->
 <header>
+  
   <div class="header-logo-menu sticker">
     <div class="container py-4">
       <div class="row align-items-center">
-        
+
         <!-- Left Column: Logo + Mobile Toggle -->
         <div class="col-lg-2 col-12 d-flex justify-content-between align-items-center">
           <div class="logo">
@@ -12,7 +13,7 @@
 
           <!-- Mobile Toggle Button (hamburger) -->
           <button id="mobileToggle" class="btn btn-outline-dark d-lg-none" style="font-size: 1.5rem;" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
-            <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+            <i class="fas fa-bars"></i>
           </button>
         </div>
 
@@ -22,7 +23,32 @@
             <div class="mainmenu d-none d-lg-block">
               <nav>
                 <ul id="nav" class="d-flex gap-4 align-items-center" style="margin: 0; padding: 0; list-style: none;">
-                  <?php include_once "include/nav-links.php"; ?>
+                  <li>
+                    <span class="px-3 nav-link-custom">Dashboard</span>
+                  </li>
+
+                  <li class="category-dropdown" style="position: relative;">
+                    <span class="px-3 nav-link-custom category-toggle">
+                      Category
+                      <i class="fas fa-chevron-down ms-0"></i>
+                    </span>
+                    <ul class="sub-menu">
+                      <li><a href="/include/category/animation.php"><span>Animation</span></a></li>
+                      <li><span>Digital Arts</span></li>
+                      <li><span>Pencil and Paper</span></li>
+                      <li><span>UI Design</span></li>
+                      <li><span>Photography</span></li>
+                      <li><span>Certificate</span></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="px-3 nav-link-custom">About Me</span>
+                  </li>
+
+                  <li>
+                    <span class="px-3 nav-link-custom">Contact Us</span>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -32,7 +58,104 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.category-toggle');
+      const submenu = document.querySelector('.category-dropdown .sub-menu');
+
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevent body click
+        submenu.classList.toggle('show');
+      });
+
+      // Optional: Close when clicking outside
+      document.addEventListener('click', function () {
+        submenu.classList.remove('show');
+      });
+
+      submenu.addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevent click inside submenu from closing it
+      });
+    });
+  </script>
 </header>
+
+<style>
+    .nav-link-custom {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      transition: all 0.3s ease;
+      padding: 10px 16px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .nav-link-custom:hover {
+      color: #5693c9;
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 320px;
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      z-index: 999;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .sub-menu.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .sub-menu li {
+      list-style: none;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .sub-menu li:last-child {
+      margin-bottom: 0;
+    }
+
+    .sub-menu li:hover {
+      background: linear-gradient(135deg, #5693c9, #3b6ea5);
+      transform: translateX(5px);
+      cursor: pointer;
+    }
+
+    .sub-menu li span,
+    .sub-menu li a {
+      display: block;
+      font-size: 17px;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .sub-menu li:hover span,
+    .sub-menu li:hover a {
+      color: #fff;
+    }
+  </style>
+
+
+
 
 <!-- Mobile Nav Modal -->
 <div class="modal fade" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true">
