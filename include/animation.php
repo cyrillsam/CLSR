@@ -188,7 +188,6 @@ Here’s how the magic happens:</p>
     cursor: pointer;
     z-index: 10;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     transition: background 0.3s ease;
   }
@@ -214,7 +213,6 @@ Here’s how the magic happens:</p>
       top: auto;
       bottom: 10px;
       transform: none;
-      background: rgba(255, 255, 255, 0.9);
     }
 
     #prevBtn {
