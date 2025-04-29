@@ -147,30 +147,40 @@ Scroll down, click around, and discover the skills, style, and soul behind every
     Not finding what you're looking for? <br>
     There's a whole universe waiting behind the button below. <br><br>
     From the fine lines of UI design to the vivid world of concept art, each category is a new chapter in the story I create. <br><br>
-    Click ‘Explore more’ and unlock more of what inspires, designs, and defines my creative journey. <br><br>
+    Click ‘Explore more’ to reveal the category button, where you can navigate through and explore all features available on each page. <br><br>
     Because creativity doesn’t live in one place it flows, it expands. <br>
     And now, so can you.
   </p>
   <!-- 🔘 Explore More Button -->
   <a href="#explore" style="
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: rgb(80, 169, 228);
-      color: #000;
-      text-decoration: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    " 
-    onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='white';"
-    onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='#000';">
-      Explore more
-    </a>
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(80, 169, 228);
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  " 
+  onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='white';"
+  onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='#000';">
+  Explore more
+</a>
   </div>
 </div>
 
   <style>
+    html {
+  scroll-behavior: smooth;
+}
+    /* Apply the Raleway font globally */
+body, header, .desktop-nav-link, .desktop-category-toggle, 
+#mobileToggle, h1, h2, h3, h4, h5, h6, p, span, 
+.desktop-sub-menu li span, .desktop-sub-menu li a, 
+.primary-nav-link, .sub-link, .modal-title, .category-toggle {
+    font-family: 'Raleway', sans-serif; /* Apply the Raleway font to all text */
+}
     @media (max-width: 768px) {
   .behind-the-canvas-img {
     width: 80% !important; /* Make it noticeably larger */

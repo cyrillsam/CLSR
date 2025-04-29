@@ -1,17 +1,6 @@
 <section class="features-section">
   <div class="container" style="font-size: 2.0rem;">
-    <p style="
-      font-size: 1.5rem; 
-      margin-top: 5rem; 
-      margin-bottom: 5rem; 
-      text-align: center; 
-      max-width: 800px; 
-      margin-left: auto; 
-      margin-right: auto; 
-      line-height: 1.8;">
-      Welcome to the heart of my creative universe where code meets canvas, 
-      and pixels tell stories. This space is designed not just to showcase my work, but to immerse you in it.
-    </p>  
+
 
     <p style="
       font-size: 2.0rem; 

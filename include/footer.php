@@ -41,6 +41,7 @@
     border-radius: 50%;
     font-size: 1.5rem;
     color: white;
+    text-decoration: none; /* Remove underline */
     transition: transform 0.3s;
   }
 
@@ -81,7 +82,7 @@
     <div class="row">
       <!-- Logo -->
       <div class="col-md-6 footer-logo d-flex flex-column align-items-md-start align-items-center">
-        <img src="img/logo/logo_footer.png" alt="Your Logo">
+      <img src="/img/logo/logo_footer.png" alt="Your Logo">
       </div>
 
       <!-- Quick Links + Social -->
@@ -89,7 +90,7 @@
         <div class="row">
           <div class="col-sm-6">
             <ul class="quick-links list-unstyled">
-              <li class="mb-2"><a href="#">Dashboard</a></li>
+              <li class="mb-2"><a href="/index.php">Dashboard</a></li>
               <li class="mb-2"><a href="#">Category</a></li>
             </ul>
           </div>

@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>CLSR</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -30,7 +29,7 @@
   <link href="css/plugins.css" rel="stylesheet">
 
   <!-- Style CSS ============================================ -->
-  <link href="style.css?<?= time() ?>" rel="stylesheet">
+  <link href="style.css?<?php echo time(); ?>" rel="stylesheet">
 
   <!-- Color CSS ============================================ -->
   <link href="css/color.css" rel="stylesheet">
@@ -51,7 +50,6 @@
   <link type="text/css" href="switcher/color-seven.css" title="color-seven" rel="alternate stylesheet" media="screen" />
   <link type="text/css" href="switcher/color-eight.css" title="color-eight" rel="alternate stylesheet" media="screen" />
   <link type="text/css" href="switcher/color-nine.css" title="color-nine" rel="alternate stylesheet" media="screen" />
-  <link type="text/css" href="switcher/color-ten.css" title="color-ten" rel="alternate stylesheet" media="screen" />
   <link type="text/css" href="switcher/color-ten.css" title="color-ten" rel="alternate stylesheet" media="screen" />
   <link type="text/css" href="switcher/pattren1.css" title="pattren1" rel="alternate stylesheet" media="screen" />
   <link type="text/css" href="switcher/pattren2.css" title="pattren2" rel="alternate stylesheet" media="screen" />
@@ -219,14 +217,17 @@
   color: white;
   border: none;
   border-radius: 50%; /* Fully rounded button */
-  padding: 20px 20px; /* Large padding for a bigger button */
-  font-size: 24px; /* Larger icon */
+  width: 70px; /* Set width for a perfect circle */
+  height: 70px; /* Set height equal to width */
+  padding: 0; /* Remove padding to maintain circular shape */
+  font-size: 20px; /* Adjusted icon size */
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   transition: all 0.3s ease; /* Smooth transition */
   z-index: 999; /* Ensures the button stays on top */
   display: none; /* Initially hidden */
   text-align: center;
+  line-height: 50px; /* Center the icon vertically */
 }
 
 #back-to-top:hover {
@@ -244,5 +245,6 @@
   content: '↑'; /* Set the icon */
   font-size: 30px; /* Increase the font size */
 }
+
 
 </style>

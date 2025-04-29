@@ -1,6 +1,7 @@
+<!-- Hero Section -->
 <section class="hero-section" style="
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   background: url('img/logo/background.jpg') center center / cover no-repeat;
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@
   justify-content: flex-start;
   color: white;
   text-align: left;
+
 ">
 
   <div style="
@@ -19,7 +21,7 @@
     <h1 style="
       font-size: clamp(1.8rem, 5vw, 3rem);
       line-height: 1.3;
-      font-weight: 600;
+      font-weight: bold;
       margin: 0;
     ">
       From Imagination to Reality,<br>
@@ -43,6 +45,28 @@
   </div>
 
 </section>
+
+<!-- Scroll Target Section -->
+<section id="explore" style="
+  scroll-margin-top: 60px;
+  font-size: 1.5rem; 
+  margin-top: 5rem; 
+  text-align: center; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  line-height: 1.8;
+">
+  <p>Welcome to the heart of my creative universe where code meets canvas, and pixels tell stories. This space is designed not just to showcase my work, but to immerse you in it.</p>
+</section>
+
+<!-- Smooth Scroll CSS (add this to <head> or <style>) -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 <style>
 /* For Mobile */
 @media (max-width: 768px) {
@@ -61,6 +85,149 @@
     font-size: clamp(1.5rem, 4vw, 2.5rem); /* Adjust font size for mobile */
   }
 }
+
+  /* Mobile logo - fit perfectly on mobile devices */
+    @media (max-width: 700px) {
+    .clsr-logo img {
+      width: 100%; /* Logo will take up 100% of the container width */
+      max-width: 300px; /* You can adjust this value based on how large you want it to appear on mobile */
+      height: auto; /* Maintain aspect ratio */
+    }
+    }
+    
+    .primary-nav-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 16px; /* Slightly smaller for mobile readability */
+      font-weight: normal;
+      color: #333;
+      transition: all 0.3s ease;
+      padding: 10px 16px;
+      cursor: pointer;
+      position: relative;
+      width: 100%; /* Full width on mobile */
+      text-decoration: none; /* Remove underline */
+      border-radius: 8px;
+      }
+      
+      .primary-nav-link:hover {
+      background: linear-gradient(135deg, #5693c9, #3b6ea5);
+      transform: translateX(5px);
+      color: #fff;
+      text-decoration: none; /* Remove underline */
+      }
+      
+      /* Mobile Sub-links inside collapse menu */
+      .sub-link {
+      display: block;
+      font-size: 15px;
+      font-weight: normal;
+      color: #333;
+      text-decoration: none; /* Remove underline */
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      transition: background 0.2s ease, transform 0.2s ease;
+      }
+      
+      .sub-link:hover {
+      background: linear-gradient(135deg, #5693c9, #3b6ea5);
+      transform: translateX(5px);
+      color: #fff;
+      text-decoration: none; /* Remove underline */
+      }
+      
+      /* Collapse Category Container */
+      #categoryCollapse {
+      background: #bbbaba; /* Gray background for container */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.404); /* Add shadow for container */
+      padding: 1rem;
+      border-radius: 12px;
+      }
+
+      #categoryCollapse ul li {
+      list-style: none;
+      }
+      
+      /* Mobile Modal Specific */
+      .modal-dialog-top {
+      margin: 1rem auto; /* Keep modal near top for mobile */
+      }
+      
+      .modal-content {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      }
+      
+      /* Modal Header Centered and Clean */
+      .modal-header {
+      border-bottom: none;
+      justify-content: center;
+      position: relative;
+      }
+      
+      .modal-title {
+      font-weight: normal;
+      color: #333;
+      }
+      
+      /* Custom Close Button */
+      .custom-close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+      }
+      
+      .custom-close-btn:hover {
+      opacity: 1;
+      transform: scale(1.2);
+      }
+      
+      /* Button inside collapse */
+      .category-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-size: 16px;
+      font-weight: normal;
+      gap: 6px;
+      padding: 10px 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #333;
+      transition: all 0.3s ease;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none; /* Remove underline */
+      }
+      
+      .category-toggle:hover {
+      background: linear-gradient(135deg, #5693c9, #3b6ea5);
+      transform: translateX(5px);
+      color: #fff;
+      text-decoration: none; /* Remove underline */
+      }
+      
+      /* Mobile Adjustments */
+      @media (max-width: 768px) {
+      .modal-dialog {
+        max-width: 90%;
+      }
+      }
+      
+      /* End of Mobile Nav Buttons */
+
 </style>
 
 
