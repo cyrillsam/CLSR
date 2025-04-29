@@ -179,6 +179,70 @@ Here’s how the magic happens:</p>
 
 </section>
 
+<style>
+  /* Base Arrow Button Styles */
+  #prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+
+
+
+  #prevBtn svg, #nextBtn svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #prevBtn, #nextBtn {
+      top: auto;
+      bottom: 10px;
+      transform: none;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    #prevBtn {
+      left: 20%;
+    }
+
+    #nextBtn {
+      right: 20%;
+    }
+
+    #prevBtn svg, #nextBtn svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #prevBtn {
+      left: 10%;
+    }
+
+    #nextBtn {
+      right: 10%;
+    }
+  }
+</style>
+
+
 <p style="
         font-size: 1.5rem; 
         padding-bottom: 50px;
@@ -238,6 +302,8 @@ I mix the power of design with storytelling tools to breathe life into pixels.
 
 <!-- Styles -->
 <style>
+
+
 
 .video-grid {
   display: flex;
