@@ -11,9 +11,7 @@
   justify-content: flex-start;
   color: white;
   text-align: left;
-
 ">
-
   <div style="
     margin-left: 10vw;
     max-width: 90vw;
@@ -43,29 +41,25 @@
       Explore More
     </a>
   </div>
-
 </section>
 
 <!-- Scroll Target Section -->
 <section id="explore" style="
   scroll-margin-top: 60px;
-  font-size: 1.5rem; 
-  margin-top: 5rem; 
-  text-align: center; 
-  max-width: 800px; 
-  margin-left: auto; 
-  margin-right: auto; 
+  padding-top: 60px;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.8;
 ">
   <p>Welcome to the heart of my creative universe where code meets canvas, and pixels tell stories. This space is designed not just to showcase my work, but to immerse you in it.</p>
 </section>
 
-<!-- Smooth Scroll CSS (add this to <head> or <style>) -->
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+
+
+
 
 <style>
 /* For Mobile */

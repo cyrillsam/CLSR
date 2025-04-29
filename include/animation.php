@@ -6,7 +6,8 @@
   <title>CLSR - Animation</title>
 
   <!-- Favicon (Updated path) -->
-  <link href="http://localhost/CLSR/img/logo/clsr_logo-browser.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="icon" href="/img/logo/clsr_logo-browser.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/logo/clsr_logo-browser.png" type="image/x-icon">
 
   <!-- Google Fonts - Raleway -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body >
+<body>
 <!-- animation.php -->
 <?php include 'header.php'; ?>
 
@@ -232,8 +233,6 @@ I mix the power of design with storytelling tools to breathe life into pixels.
     </div>
   </div>
 </div>
-
-<?php include 'home/pricing-section.php'; ?>
 </section>
 
 
@@ -386,7 +385,7 @@ showPage(currentPage - 1);
 
 </style>
 
-
+<?php include 'home/pricing-section.php'; ?>
 
 
 <!-- Footer Include -->
