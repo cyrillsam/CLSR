@@ -28,7 +28,7 @@
 <section class="hero-section" style="
   position: relative;
   min-height: 100vh;
-  background: url('/img/logo/animation-page.png') center center / cover no-repeat;
+  background: url('/img/logo/animation-page.PNG') center center / cover no-repeat;
   margin: 0;
   padding: 0;
   width: 100vw;
