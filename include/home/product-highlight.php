@@ -120,7 +120,8 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   font-weight: bold;">
     BEHIND THE CANVAS
   </p>  
-  <div style="
+
+<div style="
   display: flex; 
   align-items: center; 
   justify-content: center; 

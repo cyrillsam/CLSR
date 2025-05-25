@@ -166,6 +166,15 @@ Here’s how the magic happens:</p>
     </div>
   </div>
 
+<!-- Page 6 -->
+<div class="video-page">
+  <div class="video-grid" style="justify-content: center; gap: 70px;">
+    <iframe src="https://www.youtube.com/embed/vyBUqGs5HQI?autoplay=1&mute=1&rel=0&modestbranding=1" allow="autoplay" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/6oZIlgg6_-Q?autoplay=1&mute=1&rel=0&modestbranding=1" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</div>
+
+
 </div>
 
 <!-- Dots -->
@@ -175,6 +184,7 @@ Here’s how the magic happens:</p>
   <span class="dot" onclick="showPage(2)"></span>
   <span class="dot" onclick="showPage(3)"></span>
   <span class="dot" onclick="showPage(4)"></span>
+  <span class="dot" onclick="showPage(5)"></span>
 </div>
 
 </section>

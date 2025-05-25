@@ -5,7 +5,7 @@
   <div class="container-fluid custom-container">
 
     <p class="contact-intro">
-      Got something in mind? Let’s bring it to life. Whether you’re looking for a commissioned artwork, a UI design for your brand, a full website experience, or you just want to collaborate—I'm here for it.
+      Got something in mind? Let’s bring it to life. Whether you’re looking for a commissioned artwork, a UI design for your brand, a full website experience, or you just want to collaborate, I'm here for it.
     </p>
 
     <div class="d-flex justify-content-center">
