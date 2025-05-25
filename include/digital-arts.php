@@ -589,7 +589,7 @@ Every mark is intentional. Every composition tells a quiet story. This is digita
 <div class="row justify-content-center text-center" style="padding-bottom: 30px; gap: 20px;">
     <div class="col-md-5 d-flex flex-column align-items-center">
         <div style="min-width: 120px;">
-            <img src="/img/logo/sketchbook.png" alt="Sketchbook" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+            <img src="/img/logo/sketchbook.PNG" alt="Sketchbook" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
             <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Sketchbook</p>
             <p style="font-size: 1rem; margin: 0; max-width: 250px; padding-top: 8px;">
                 Sketchbook is where my ideas begin raw lines, quick sketches, and pure expression straight from the stylus.
@@ -599,7 +599,7 @@ Every mark is intentional. Every composition tells a quiet story. This is digita
 
     <div class="col-md-5 d-flex flex-column align-items-center">
         <div style="min-width: 120px;">
-            <img src="/img/logo/iartbook.png" alt="iArtbook" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+            <img src="/img/logo/iartbook.PNG" alt="iArtbook" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
             <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">iArtbook</p>
             <p style="font-size: 1rem; margin: 0; max-width: 250px; padding-top: 8px;">
                 iArtbook is where they evolve refined strokes, layered colors, and polished detail that bring each piece to life.
