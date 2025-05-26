@@ -43,6 +43,7 @@ From high-definition galleries of my realistic and digital art, to interactive d
     </div>
   </div>
 
+  
   <p style="
         font-size: 1.5rem; 
         margin-top: 5rem; 
@@ -208,36 +209,41 @@ body, header, .desktop-nav-link, .desktop-category-toggle,
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
   </style>
+
+
   <style>
-  .scroll-carousel-container {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 20px 0;
-  }
+.scroll-carousel-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
 
-  .scroll-carousel-track {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    width: max-content;
-    animation: scroll-left 40s linear infinite;
-  }
+.scroll-carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
 
-  .scroll-carousel-track img {
-    height: 500px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-  }
+.scroll-carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: max-content;
+  padding: 20px;
+}
+.scroll-carousel-track img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
 
-  .scroll-carousel-track img:hover {
-    transform: scale(1.05);
-  }
-
+.scroll-carousel-track img:hover {
+  transform: scale(1.05);
+}
   @keyframes scroll-left {
     0% {
       transform: translateX(0);
@@ -247,4 +253,85 @@ body, header, .desktop-nav-link, .desktop-category-toggle,
     }
   }
   </style>
+
+<script>
+  const container = document.querySelector('.scroll-carousel-container');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let autoScrollInterval;
+  let velocity = 1;
+  let lastMouseX;
+  let isUserInteracting = false;
+  let userTimeout;
+
+  // Drag with momentum
+  container.addEventListener('mousedown', (e) => {
+    isDown = true;
+    container.classList.add('active');
+    startX = e.pageX;
+    scrollLeft = container.scrollLeft;
+    lastMouseX = e.pageX;
+    pauseAutoScroll();
+  });
+
+  container.addEventListener('mouseup', () => {
+    isDown = false;
+    container.classList.remove('active');
+    resumeAutoScrollAfterDelay();
+  });
+
+  container.addEventListener('mouseleave', () => {
+    isDown = false;
+    container.classList.remove('active');
+  });
+
+  container.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX;
+    const walk = (x - startX) * 1.5;
+    container.scrollLeft = scrollLeft - walk;
+    velocity = x - lastMouseX;
+    lastMouseX = x;
+  });
+
+  // Touch support
+  container.addEventListener('touchstart', pauseAutoScroll);
+  container.addEventListener('touchend', resumeAutoScrollAfterDelay);
+
+  function autoScroll() {
+    container.scrollLeft += velocity;
+    if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+      container.scrollLeft = 0;
+    }
+  }
+
+  function startAutoScroll() {
+    autoScrollInterval = setInterval(() => {
+      container.scrollLeft += 0.5; // Adjust for speed
+      if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+        container.scrollLeft = 0;
+      }
+    }, 15); // Lower = smoother
+  }
+
+  function pauseAutoScroll() {
+    clearInterval(autoScrollInterval);
+    isUserInteracting = true;
+  }
+
+  function resumeAutoScrollAfterDelay() {
+    clearTimeout(userTimeout);
+    userTimeout = setTimeout(() => {
+      isUserInteracting = false;
+      startAutoScroll();
+    }, 2500); // Resume after 2.5s
+  }
+
+  // Init
+  startAutoScroll();
+</script>
+
+
 </section>

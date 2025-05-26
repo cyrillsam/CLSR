@@ -49,6 +49,7 @@
       line-height: 1.3;
       font-weight: bold;
       margin: 0;
+            text-shadow: 2px 2px 4px black;
     ">
       Sketch. Click. Create.<br>
     </h1>
@@ -57,14 +58,14 @@
       margin-top: 20px;
       padding: 12px 24px;
       background-color: rgb(80, 169, 228);
-      color: black;
+      color: white;
       text-decoration: none;
       font-size: 1rem;
       border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
     "
-    onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='white';"
-    onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='black';">
+    onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='black';"
+    onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='white';">
       Explore More
     </a>
   </div>
@@ -258,7 +259,7 @@ Get ready to explore the fusion of tech and artistry where every piece is more t
 <div id="fullscreenOverlay" aria-hidden="true">
   <div id="fullscreenContent">
     <!-- Back Button -->
-    <button id="backButton" onclick="closeFullscreen()" aria-label="Go Back">← Back</button>
+    <button id="backButton" onclick="closeFullscreen()" aria-label="Go Back">Back</button>
 
     <!-- Zoom Controls -->
     <div id="zoomControls">

@@ -91,25 +91,25 @@
 
       <div class="modal-body">
         <ul class="list-unstyled">
-            <li><a href="/index.php" class="primary-nav-link">Dashboard</a></li>
-          
-    <!-- Mobile Category Dropdown -->
-    <li>
-      <button class="primary-nav-link category-toggle w-100 d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="false" aria-controls="categoryCollapse" style="padding-left: 20px; margin-left: 10px; margin-right: 30px;">
-        <span class="flex-grow-1 text-center">Category</span>
-        <i class="fas fa-chevron-down ms-2 "></i>
-      </button>
-      <div class="collapse mt-2 bg-white rounded" id="categoryCollapse">
-        <ul class="list-unstyled ps-3 mb-2">
-      <li><a href="<?php echo '/include/animation.php'; ?>" class="sub-link">Animation</a></li>
-      <li><a href="<?php echo '/include/digital-arts.php'; ?>" class="sub-link">Digital Arts</a></li>
-      <li><a href="<?php echo '/include/pencil-paper.php'; ?>" class="sub-link">Pencil and Paper</a></li>
-      <li><a href="<?php echo '/include/ui-design.php'; ?>" class="sub-link">UI Design</a></li>
-      <li><a href="<?php echo '/include/photography.php'; ?>" class="sub-link">Photography</a></li>
-      <li><a href="<?php echo '/include/certificate.php'; ?>" class="sub-link">Certificate</a></li>
-        </ul>
-      </div>
-    </li>
+          <li><a href="/index.php" class="primary-nav-link">Dashboard</a></li>
+
+          <!-- Mobile Category Dropdown -->
+          <li>
+            <button class="primary-nav-link category-toggle w-100 d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="false" aria-controls="categoryCollapse" style="padding-left: 20px; margin-left: 10px; margin-right: 30px;">
+              <span class="flex-grow-1 text-center">Category</span>
+              <i class="fas fa-chevron-down ms-2"></i>
+            </button>
+            <div class="collapse mt-2 bg-white rounded" id="categoryCollapse">
+              <ul class="list-unstyled ps-3 mb-2">
+                <li><a href="<?php echo '/include/animation.php'; ?>" class="sub-link">Animation</a></li>
+                <li><a href="<?php echo '/include/digital-arts.php'; ?>" class="sub-link">Digital Arts</a></li>
+                <li><a href="<?php echo '/include/pencil-paper.php'; ?>" class="sub-link">Pencil and Paper</a></li>
+                <li><a href="<?php echo '/include/ui-design.php'; ?>" class="sub-link">UI Design</a></li>
+                <li><a href="<?php echo '/include/photography.php'; ?>" class="sub-link">Photography</a></li>
+                <li><a href="<?php echo '/include/certificate.php'; ?>" class="sub-link">Certificate</a></li>
+              </ul>
+            </div>
+          </li>
 
           <li><a href="/about.php" class="primary-nav-link">About Me</a></li>
           <li><a href="/contact.php" class="primary-nav-link">Contact Us</a></li>
@@ -119,47 +119,62 @@
   </div>
 </div>
 
-
-
-
+<!-- JavaScript -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Select all category toggle elements (the buttons that open the dropdowns)
-    const categoryToggles = document.querySelectorAll('.desktop-category-toggle');
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+  const mobileCategoryToggle = document.querySelector('.category-toggle');
+  const mobileCategoryCollapse = document.getElementById('categoryCollapse');
 
-    // Loop through each toggle and add an event listener
-    categoryToggles.forEach(toggle => {
-      toggle.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default behavior
-
-        // Close any other open dropdowns
-        document.querySelectorAll('.desktop-sub-menu.show').forEach(menu => {
-          if (menu !== this.nextElementSibling) {
-            menu.classList.remove('show');
-          }
-        });
-
-        // Find the next sibling (which is the dropdown menu)
-        const subMenu = this.nextElementSibling;
-
-        // Toggle the visibility of the dropdown
-        if (subMenu) {
-          subMenu.classList.toggle('show');
-          subMenu.style.display = subMenu.classList.contains('show') ? 'block' : 'none';
-        }
-      });
+  if (mobileCategoryToggle && mobileCategoryCollapse) {
+    // Only update icon rotation – no need to manually toggle collapse
+    mobileCategoryCollapse.addEventListener('show.bs.collapse', function () {
+      mobileCategoryToggle.querySelector('i').classList.add('rotate-180');
     });
 
-    // Close dropdown if clicked outside
-    document.addEventListener('click', function(event) {
-      if (!event.target.closest('.desktop-category-dropdown')) {
-        document.querySelectorAll('.desktop-sub-menu.show').forEach(menu => {
+    mobileCategoryCollapse.addEventListener('hide.bs.collapse', function () {
+      mobileCategoryToggle.querySelector('i').classList.remove('rotate-180');
+    });
+  }
+
+  // Desktop menu logic still needed
+  const categoryToggles = document.querySelectorAll('.desktop-category-toggle');
+  categoryToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (event) {
+      event.preventDefault();
+      document.querySelectorAll('.desktop-sub-menu.show').forEach(menu => {
+        if (menu !== this.nextElementSibling) {
           menu.classList.remove('show');
-        });
+          menu.style.display = 'none';
+        }
+      });
+      const subMenu = this.nextElementSibling;
+      if (subMenu) {
+        subMenu.classList.toggle('show');
+        subMenu.style.display = subMenu.classList.contains('show') ? 'block' : 'none';
       }
     });
   });
+
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.desktop-category-dropdown')) {
+      document.querySelectorAll('.desktop-sub-menu.show').forEach(menu => {
+        menu.classList.remove('show');
+        menu.style.display = 'none';
+      });
+    }
+  });
+});
+
 </script>
+
+<!-- CSS -->
+<style>
+  .rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+</style>
 
 
 

@@ -48,6 +48,7 @@
       line-height: 1.3;
       font-weight: bold;
       margin: 0;
+            text-shadow: 2px 2px 4px black;
     ">
       Motion meets meaning<br>
     </h1>
@@ -56,14 +57,14 @@
       margin-top: 20px;
       padding: 12px 24px;
       background-color: rgb(80, 169, 228);
-      color: black;
+      color: white;
       text-decoration: none;
       font-size: 1rem;
       border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
     "
-    onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='white';"
-    onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='black';">
+    onmouseover="this.style.backgroundColor='rgb(60, 140, 200)'; this.style.color='black';"
+    onmouseout="this.style.backgroundColor='rgb(80, 169, 228)'; this.style.color='white';">
       Explore More
     </a>
   </div>
