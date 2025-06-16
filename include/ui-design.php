@@ -135,28 +135,83 @@
       onmouseover="this.style.transform='scale(1.05)'" 
       onmouseout="this.style.transform='scale(1)'"
     >
+       <div class="image-text">Integra Website</div>
   </div>
   <div class="image-page">
-    <img 
-      src="/img/ui-design/Second Layout.jpg" 
-      alt="Second UI Design" 
-      onclick="openFullscreen(this.src)" 
-      style="max-width: 70vw; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'"
-    >
+<img 
+  src="/img/ui-design/ecsol-erp.jpg" 
+  alt="Second UI Design" 
+  onclick="openFullscreen(this.src)" 
+  style="max-width: 70vw; height: 70vw; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
+  class="responsive-img"
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'"
+/>
+     <div class="image-text">EC SOL ERP - Help Page</div>
   </div>
+
   <div class="image-page">
     <img 
-      src="/img/ui-design/Third Layout.jpg" 
+      src="/img/ui-design/alphatales.jpg" 
       alt="Third UI Design" 
       onclick="openFullscreen(this.src)" 
-      style="max-width: 70vw; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
+      style="max-width: 70vw; height: 70vw; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
       onmouseover="this.style.transform='scale(1.05)'" 
       onmouseout="this.style.transform='scale(1)'"
     >
+         <div class="image-text">Alpha Tales - Android App</div>
+  </div>
+
+<div class="image-page">
+  <img 
+    src="/img/ui-design/inventorysystem/Purchase Order.jpg" 
+    alt="Fourth UI Design" 
+    onclick="openGallery('ecsol-folder')" 
+    style="max-width: 70vw; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'"
+  >
+   <div class="image-text">EC SOLUTION & ENTERPRISE - Inventory System</div>
+</div>
+
+<!-- Folder Gallery Modal -->
+<div id="ecsol-folder" class="folder-gallery">
+  <div class="folder-content">
+    <button class="close-folder" onclick="closeGallery('ecsol-folder')">×</button>
+    <div class="folder-images">
+      <img src="/img/ui-design/inventorysystem/Purchase Order.jpg" alt="Screenshot 1" onclick="openFullscreen(this.src)">
+      <img src="/img/ui-design/inventorysystem/Purchase Order_Search.jpg" alt="Screenshot 2" onclick="openFullscreen(this.src)">
+      <img src="/img/ui-design/inventorysystem/Purchase Order_Delete.jpg" alt="Screenshot 3" onclick="openFullscreen(this.src)">
+      <img src="/img/ui-design/inventorysystem/Purchase Order_Edit.jpg" alt="Screenshot 4" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Delete Purchase Request.jpg" alt="Screenshot 5" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Edit Purchase Request.jpg" alt="Screenshot 6" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/New Purchase Request.jpg" alt="Screenshot 7" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Search Request.jpg" alt="Screenshot 8" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Add Upload Sales.jpg" alt="Screenshot 9" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Delete Upload Sales.jpg" alt="Screenshot 10" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Edit Upload Sales.jpg" alt="Screenshot 11" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/List of Upload Sales.jpg" alt="Screenshot 12" onclick="openFullscreen(this.src)">
+      <img src= "/img/ui-design/inventorysystem/Search Upload Sales.jpg" alt="Screenshot 13" onclick="openFullscreen(this.src)">
+
+
+    </div>
   </div>
 </div>
+
+
+
+</div>
+
+<script>
+function openGallery(id) {
+  document.getElementById(id).classList.add('active');
+}
+
+function closeGallery(id) {
+  document.getElementById(id).classList.remove('active');
+}
+</script>
+
 
 
 <!-- Dots -->
@@ -164,6 +219,7 @@
   <span class="dot active" onclick="showPage(0)"></span>
   <span class="dot" onclick="showPage(1)"></span>
   <span class="dot" onclick="showPage(2)"></span>
+  <span class="dot" onclick="showPage(3)"></span>
 </div>
 
 <!-- Fullscreen Overlay -->
@@ -187,6 +243,91 @@
 
 <!-- Styles -->
 <style>
+.folder-gallery {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.folder-gallery.active {
+  display: flex;
+}
+
+.folder-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  text-align: center;
+}
+
+.folder-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.folder-images img {
+  width: 60vw;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.folder-images img:hover {
+  transform: scale(1.05);
+}
+
+.close-folder {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background:none;
+  color: #333;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.close-folder:hover {
+  background: #333;
+  color: white;
+}
+
+
+.image-text {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+
 .image-page {
         display: none;
 }
@@ -395,7 +536,7 @@ function openFullscreen(src) {
         const widthRatio = containerWidth / naturalWidth;
         const heightRatio = containerHeight / naturalHeight;
 
-        zoomLevel = Math.min(widthRatio, heightRatio); // Fit to screen
+       zoomLevel = 1; 
         panX = 0;
         panY = 0;
         updateTransform();
@@ -573,10 +714,44 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   margin-right: auto; 
   line-height: 1.8;
   font-weight: bold;">
-    BEHIND THE DESIGNS
+    BEHIND THE DESIGN
   </p>  
 
-  
+    <p style="
+        font-size: 1.5rem; 
+        margin-top: 5rem; 
+        margin-bottom: 5rem; 
+        text-align: center; 
+        max-width: 800px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        line-height: 1.8;">
+Each interface is built with precision clean grids, smart flows, and responsive elements.
+Designed for clarity. Engineered for performance.
+This is where technology meets intuitive experience.
+</p>
+
+<div class="row justify-content-center text-center" style="padding-bottom: 30px; gap: 20px;">
+    <div class="col-md-5 d-flex flex-column align-items-center">
+        <div style="min-width: 120px;">
+            <img src="/img/logo/figma.png" alt="figma" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Figma</p>
+      <p style="font-size: 1.1rem; margin: 0; text-align: center; max-width: 250px; padding-top: 20px;">
+              Figma is for professional UI/UX design, perfect for apps, websites, and prototypes with real-time team collaboration.</p>
+        </div>
+    </div>
+
+  <div class="col-md-6 d-flex flex-column align-items-center mb-4">
+    <div class="text-center" style="min-width: 120px;">
+      <img src="/img/logo/canva.png" alt="Canva" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 15px;">
+      <p style="font-size: 1.1rem; margin: 0; text-align: center; font-weight: bold;">Canva</p>
+      <p style="font-size: 1.1rem; margin: 0; text-align: center; max-width: 250px; padding-top: 20px;">Canva is for quick, beautiful graphics ideal for social media, branding, and light mockups, no design skills needed.</p>
+    </div>
+  </div>
+    </div>
+
+
+
 
 <!-- Back to Top Button -->
 <button id="back-to-top" title="Go to top">↑</button>
