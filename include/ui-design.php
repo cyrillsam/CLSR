@@ -171,7 +171,7 @@
     onmouseover="this.style.transform='scale(1.05)'" 
     onmouseout="this.style.transform='scale(1)'"
   >
-   <div class="image-text">EC SOLUTION & ENTERPRISE - Inventory System</div>
+   <div class="image-text">EC SOLUTIONS & ENTERPRISE - Inventory System</div>
 </div>
 
 <!-- Folder Gallery Modal -->
