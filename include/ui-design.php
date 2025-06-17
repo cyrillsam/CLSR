@@ -171,7 +171,7 @@
 
 <div class="image-page">
   <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-    EC SOLUTIONS & ENTERPRISE - Inventory System
+    EC SOLUTIONS & ENTERPRISE <br> - Inventory System
   </div>
   <img 
     src="/img/ui-design/inventorysystem/Purchase Order.jpg" 
