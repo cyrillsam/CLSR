@@ -133,12 +133,12 @@ Get ready to explore the fusion of tech and artistry where every piece is more t
   <!-- Page 1 -->
   <div class="image-page active">
     <div class="image-grid">
-    <img src="/img/photography/p1.jpg" alt="photo 1" onclick="openFullscreen(this.src)">
-    <img src="/img/photography/p2.jpg" alt="photo 2" onclick="openFullscreen(this.src)">
-    <img src="/img/photography/p3.jpg" alt="photo 3" onclick="openFullscreen(this.src)">
-    <img src="/img/photography/p4.jpg" alt="photo 4" onclick="openFullscreen(this.src)">
-    <img src="/img/photography/p5.jpg" alt="photo 5" onclick="openFullscreen(this.src)">
-    <img src="/img/photography/p6.jpg" alt="photo 6" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 1.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 2.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 3.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 5.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 6.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/image 7.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
     </div>
   </div>
 
