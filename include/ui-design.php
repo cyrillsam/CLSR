@@ -127,6 +127,9 @@
 <!-- Single Big Image Container -->
 <div id="image-pages" style="text-align: center; margin: 60px 0;">
   <div class="image-page active">
+      <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+    Integra Website
+ </div>
     <img 
       src="/img/ui-design/Integra Layout.jpg" 
       alt="Main UI Design" 
@@ -135,9 +138,11 @@
       onmouseover="this.style.transform='scale(1.05)'" 
       onmouseout="this.style.transform='scale(1)'"
     >
-       <div class="image-text">Integra Website</div>
   </div>
   <div class="image-page">
+  <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+    EC SOL ERP - Help Page
+ </div>
 <img 
   src="/img/ui-design/ecsol-erp.jpg" 
   alt="Second UI Design" 
@@ -147,10 +152,13 @@
   onmouseover="this.style.transform='scale(1.05)'" 
   onmouseout="this.style.transform='scale(1)'"
 />
-     <div class="image-text">EC SOL ERP - Help Page</div>
+
   </div>
 
   <div class="image-page">
+    <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+    Alpha Tales - Android App
+  </div>
     <img 
       src="/img/ui-design/alphatales.jpg" 
       alt="Third UI Design" 
@@ -159,10 +167,12 @@
       onmouseover="this.style.transform='scale(1.05)'" 
       onmouseout="this.style.transform='scale(1)'"
     >
-         <div class="image-text">Alpha Tales - Android App</div>
   </div>
 
 <div class="image-page">
+  <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+    EC SOLUTIONS & ENTERPRISE - Inventory System
+  </div>
   <img 
     src="/img/ui-design/inventorysystem/Purchase Order.jpg" 
     alt="Fourth UI Design" 
@@ -171,7 +181,6 @@
     onmouseover="this.style.transform='scale(1.05)'" 
     onmouseout="this.style.transform='scale(1)'"
   >
-   <div class="image-text">EC SOLUTIONS & ENTERPRISE - Inventory System</div>
 </div>
 
 <!-- Folder Gallery Modal -->
@@ -223,7 +232,7 @@ function closeGallery(id) {
 </div>
 
 <!-- Fullscreen Overlay -->
-<div id="fullscreenOverlay">
+<div id="fullscreenOverlay" aria-hidden="true">
     <div id="fullscreenContent">
         <div id="fullscreenScrollContainer">
             <img id="fullscreenImage" src="" alt="Fullscreen Preview" />
@@ -310,7 +319,6 @@ function closeGallery(id) {
   color: white;
 }
 
-
 .image-text {
   position: absolute;
   top: 35px;
@@ -327,188 +335,192 @@ function closeGallery(id) {
   white-space: nowrap;
 }
 
-
 .image-page {
-        display: none;
+  display: none;
 }
 
 .image-page.active {
-        display: block;
+  display: block;
 }
 
 .image-grid {
-        column-count: 3;
-        column-gap: 20px;
-        max-width: 1000px;
-        margin: auto;
-        padding: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
 
 .image-grid img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        display: block;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-        break-inside: avoid;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  break-inside: avoid;
 }
 
-
 .image-grid img:hover {
-        transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /* Circle Dots */
 .dot {
-        height: 20px;
-        width: 20px;
-        margin: 0 5px;
-        background-color: #bbb;
-        border-radius: 30%;
-        display: inline-block;
-        transition: background-color 0.3s;
-        cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 30%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .dot.active {
-        background-color: #444;
+  background-color: #444;
 }
 
 /* Arrow Buttons */
 #prevBtn, #nextBtn {
-        z-index: 10;
-        padding: 10px;
-        border-radius: 50%;
-        transition: background 0.3s ease;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
 }
 
 #prevBtn svg, #nextBtn svg {
-        width: 40px;
-        height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 768px) {
-        .image-grid {
-                column-count: 2;
-        }
+  .image-grid {
+    column-count: 2;
+  }
+  .folder-images img {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 480px) {
-        .image-grid {
-                column-count: 1;
-        }
+  .image-grid {
+    column-count: 1;
+  }
+  .folder-images img {
+    width: 95vw;
+  }
 }
 
 #fullscreenOverlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.95);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  overflow: hidden;
 }
 
 #fullscreenContent {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #fullscreenScrollContainer {
-    overflow: hidden;
-    touch-action: none;
+  overflow: hidden;
+  touch-action: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #fullscreenImage {
-    max-width: 90%;
-    max-height: 90%;
-    width: auto;
-    height: auto;
-    user-select: none;
-    transform-origin: center;
-    transition: transform 0.2s ease;
-    display: block;
-    margin: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  user-select: none;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  display: block;
+  margin: auto;
 }
 
-
-
 #backButton {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background: linear-gradient(135deg, #f0b7a3, #ff87ab); /* Gradient background */
-        color: white;
-        font-size: 16px;
-        padding: 10px 16px;
-        border: none;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 10000;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-        transition: background 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #f0b7a3, #ff87ab); /* Gradient background */
+  color: white;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #backButton:hover {
-        background: linear-gradient(135deg, #ff87ab, #f0b7a3); /* Reversed gradient on hover */
-        transform: scale(1.05);
+  background: linear-gradient(135deg, #ff87ab, #f0b7a3); /* Reversed gradient on hover */
+  transform: scale(1.05);
 }
 
 /* Zoom Buttons */
 #zoomControls {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    gap: 10px;
-    z-index: 10001;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+  z-index: 10001;
 }
 
-
 #zoomControls button {
-    width: 48px;
-    height: 48px;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(135deg, #36d1dc, #5b86e5);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 #zoomControls button:hover {
-        background: linear-gradient(135deg, #2ca8b9, #4365c4);
-        transform: scale(1.1);
+  background: linear-gradient(135deg, #2ca8b9, #4365c4);
+  transform: scale(1.1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #fullscreenScrollContainer {
-        padding: 20px;
-    }
+  #fullscreenScrollContainer {
+    padding: 0;
+  }
 
-    #zoomControls {
-        bottom: 20px;
-        right: 20px;
-    }
+  #zoomControls {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #fullscreenImage {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 }
-
-
-#fullscreenOverlay {
-    overflow: auto;
-}
-
-
-
 </style>
+
 
 <script>
 let zoomLevel = 1;

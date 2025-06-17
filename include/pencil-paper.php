@@ -132,6 +132,8 @@
 </script>
 
 <style>
+
+
 /* Style for Back to Top button */
 #back-to-top {
   position: fixed;
@@ -321,8 +323,10 @@
     column-gap: 20px;
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 60px; /* Add horizontal padding */
+    box-sizing: border-box;
 }
+
 
 .image-grid img {
     width: 100%;
