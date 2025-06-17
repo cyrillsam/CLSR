@@ -706,7 +706,7 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   margin-right: auto; 
   line-height: 1.8;
   font-weight: bold;">
-    BEHIND THE PICTURES
+    BEHIND THE CAPTURE
   </p>  
 
     <p style="
@@ -723,23 +723,73 @@ Designed for clarity. Engineered for performance.
 This is where technology meets intuitive experience.
 </p>
 
-<div class="row justify-content-center text-center" style="padding-bottom: 30px; gap: 20px;">
+<div class="container">
+  <div class="row justify-content-center text-center" style="padding-bottom: 30px; gap: 20px;">
+          <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.5rem; font-weight: bold; text-align: center; padding-top:80px;">
+        Cameras
+      </div>
+    <!-- Apple -->
     <div class="col-md-5 d-flex flex-column align-items-center">
-        <div style="min-width: 120px;">
-            <img src="/img/logo/apple.png" alt="figma" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
-            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Apple</p>
-      <p style="font-size: 1.1rem; margin: 0; text-align: center; max-width: 300px; padding-top: 20px;">
-Apple is for high-quality, true-to-life photography, perfect for capturing sharp details and vibrant colors.        </div>
+      <div style="min-width: 120px;">
+        <img src="/img/logo/apple.png" alt="Apple" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+        <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Apple</p>
+        <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
+          Apple is for high-quality, true-to-life photography, perfect for capturing sharp details and vibrant colors.
+        </p>
+      </div>
     </div>
 
-  <div class="col-md-6 d-flex flex-column align-items-center mb-4">
-    <div class="text-center" style="min-width: 120px;">
-      <img src="/img/logo/vivo.png" alt="vivo" style="width: 200px; height: auto; margin-bottom: 20px; margin-top: 55px;">
-      <p style="font-size: 1.1rem; margin: 0; text-align: center; font-weight: bold;">Vivo</p>
-      <p style="font-size: 1.1rem; margin: 0; text-align: center; max-width: 300px; padding-top: 20px;">
-Vivo is for stylish, enhanced shots, perfect for low-light scenes and beauty-focused photography.    </div>
-  </div>
+    <!-- Vivo -->
+    <div class="col-md-5 d-flex flex-column align-items-center">
+      <div style="min-width: 120px;">
+        <img src="/img/logo/vivo.png" alt="Vivo" style="width: 200px; height: auto; margin-bottom: 10px; margin-top: 65px;">
+        <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Vivo</p>
+        <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
+          Vivo is for stylish, enhanced shots, perfect for low-light scenes and beauty-focused photography.
+        </p>
+      </div>
     </div>
+
+             <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.5rem; font-weight: bold; text-align: center; padding-top:80px;">
+        Applications
+      </div>
+
+    <!-- Lightroom -->
+    <div class="col-md-5 d-flex flex-column align-items-center">
+      <div style="min-width: 120px;">
+        <img src="/img/logo/adobe.png" alt="Adobe Lightroom" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+        <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Adobe Lightroom</p>
+        <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
+          Adobe Lightroom is for professional-grade editing, perfect for advanced color control and high-resolution enhancements.
+        </p>
+      </div>
+    </div>
+
+    <!-- Snapseed -->
+    <div class="col-md-5 d-flex flex-column align-items-center">
+      <div style="min-width: 120px;">
+        <img src="/img/logo/snapseed.png" alt="Snapseed" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+        <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Snapseed</p>
+        <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
+          Snapseed is for precision editing, perfect for detailed adjustments and quick fixes on the go.
+        </p>
+      </div>
+    </div>
+
+    <!-- VSCO -->
+    <div class="col-md-5 d-flex flex-column align-items-center">
+      <div style="min-width: 120px;">
+        <img src="/img/logo/vsco.png" alt="VSCO" style="width: 150px; height: auto; margin-bottom: 10px; margin-top: 10px;">
+        <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">VSCO</p>
+        <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
+          VSCO is for aesthetic photo editing, perfect for applying trendy filters and subtle tones.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
