@@ -237,6 +237,7 @@ Get ready to explore the fusion of tech and artistry where every piece is more t
     <img src="/img/logo/image 39.jpg" alt="Art 15" onclick="openFullscreen(this.src)">
     <img src="/img/logo/image 45.jpg" alt="Art 16" onclick="openFullscreen(this.src)">
     <img src="/img/logo/image 55.jpg" alt="Art 18" onclick="openFullscreen(this.src)">
+    <img src="/img/logo/thea.jpg" alt="Art 19" onclick="openFullscreen(this.src)">
     </div>
   </div>
 

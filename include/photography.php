@@ -526,10 +526,12 @@ The Taste Lens
       <div class="image-grid">
         <img src="/img/food/f7.jpg" alt="food 7" onclick="openFullscreen(this.src)">
         <img src="/img/food/f11.jpg" alt="food 8" onclick="openFullscreen(this.src)">
-        <img src="/img/food/f17.jpg" alt="food 9" onclick="openFullscreen(this.src)">
         <img src="/img/food/f27.jpg" alt="food 10" onclick="openFullscreen(this.src)">
         <img src="/img/food/f28.jpg" alt="food 11" onclick="openFullscreen(this.src)">
         <img src="/img/food/f30.jpg" alt="food 12" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f31.jpg" alt="food 31" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f17.jpg" alt="food 9" onclick="openFullscreen(this.src)">
+
       </div>
     </div>
   </div>
@@ -670,6 +672,10 @@ Sweet Selections
       <div class="image-grid">
         <img src="/img/sweet/s6.jpg" alt="sweet 6" onclick="openFullscreen(this.src)">
         <img src="/img/sweet/s20.jpg" alt="sweet 20" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s22.jpg" alt="sweet 22" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s23.jpg" alt="sweet 23" onclick="openFullscreen(this.src)">
+                
+
 
       </div>
     </div>
