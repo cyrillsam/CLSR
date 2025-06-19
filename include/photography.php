@@ -130,7 +130,7 @@
   <!-- Page 1 -->
   <div class="image-page active">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p1.jpg" alt="photo 1" onclick="openFullscreen(this.src)">
@@ -145,7 +145,7 @@
   <!-- Page 2 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p13.jpg" alt="photo 13" onclick="openFullscreen(this.src)">
@@ -161,7 +161,7 @@
   <!-- Page 3 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p14.jpg" alt="photo 14" onclick="openFullscreen(this.src)">
@@ -176,7 +176,7 @@
   <!-- Page 4 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p20.jpg" alt="photo 20" onclick="openFullscreen(this.src)">
@@ -191,7 +191,7 @@
   <!-- Page 5 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p24.jpg" alt="photo 24" onclick="openFullscreen(this.src)">
@@ -209,7 +209,7 @@
   <!-- Page 6 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p30.jpg" alt="photo 30" onclick="openFullscreen(this.src)">
@@ -224,7 +224,7 @@
   <!-- Page 7 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p39.jpg" alt="photo 35" onclick="openFullscreen(this.src)">
@@ -239,7 +239,7 @@
   <!-- Page 8 -->
   <div class="image-page">
     <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
-      Random Photos
+Miscellaneous Gallery
     </div>
     <div class="image-grid">
       <img src="/img/photography/p50.jpg" alt="photo 35" onclick="openFullscreen(this.src)">
@@ -260,8 +260,6 @@
   <span class="dot" onclick="showPage(6)"></span>
   <span class="dot" onclick="showPage(7)"></span>
 </div>
-
-
 
 
 <!-- Fullscreen Overlay -->
@@ -286,28 +284,29 @@
 
 <!-- Nature -->
 <section id="nature-photography-gallery" style="position: relative;">
-<!-- Navigation Arrows -->
-<div id="prevBtn" onclick="prevPage()" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); cursor: pointer;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
-    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-  </svg>
-</div>
+  <!-- Navigation Arrows -->
+  <div id="naturePrevBtn" onclick="naturePrevPage()" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </div>
 
-<div id="nextBtn" onclick="nextPage()" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
-    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-  </svg>
-</div>
+  <div id="natureNextBtn" onclick="natureNextPage()" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+    </svg>
+  </div>
 
-  <!-- Image Pages -->
+  <!-- Nature Image Pages -->
   <div id="nature-image-pages" style="text-align: center;">
-    <!-- Example Page 1 -->
+    <!-- Page 1 -->
     <div class="nature-image-page active">
-      <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center; padding-top:80px;">
-        Nature Photography
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
       </div>
       <div class="image-grid">
         <img src="/img/nature/n1.jpg" alt="nature 1" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n13.jpg" alt="nature 13" onclick="openFullscreen(this.src)">
         <img src="/img/nature/n2.jpg" alt="nature 2" onclick="openFullscreen(this.src)">
         <img src="/img/nature/n3.jpg" alt="nature 3" onclick="openFullscreen(this.src)">
         <img src="/img/nature/n4.jpg" alt="nature 4" onclick="openFullscreen(this.src)">
@@ -315,17 +314,93 @@
         <img src="/img/nature/n6.jpg" alt="nature 6" onclick="openFullscreen(this.src)">
       </div>
     </div>
-    <!-- Add more .nature-image-page blocks as needed -->
+
+    <!-- Page 2 -->
+    <div class="nature-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
+      </div>
+      <div class="image-grid">
+        <img src="/img/nature/n7.jpg" alt="nature 7" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n8.jpg" alt="nature 8" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n10.jpg" alt="nature 10" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n23.jpg" alt="nature 11" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n12.jpg" alt="nature 12" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n9.jpg" alt="nature 12" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="nature-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
+      </div>
+      <div class="image-grid">
+        <img src="/img/nature/n14.jpg" alt="nature 14" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n11.jpg" alt="nature 11" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n17.jpg" alt="nature 17" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n18.jpg" alt="nature 18" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n20.jpg" alt="nature 20" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n15.jpg" alt="nature 15" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+        <!-- Page 4 -->
+    <div class="nature-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
+      </div>
+      <div class="image-grid">
+        <img src="/img/nature/n16.jpg" alt="nature 16" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n24.jpg" alt="nature 24" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n25.jpg" alt="nature 25" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n29.jpg" alt="nature 29" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n31.jpg" alt="nature 31" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n33.jpg" alt="nature 33" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="nature-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
+      </div>
+      <div class="image-grid">
+        <img src="/img/nature/n26.jpg" alt="nature 26" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n27.jpg" alt="nature 27" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n28.jpg" alt="nature 28" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n30.jpg" alt="nature 30" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n32.jpg" alt="nature 32" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n38.jpg" alt="nature 38" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n36.jpg" alt="nature 36" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n39.jpg" alt="nature 39" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+        <!-- Page 6 -->
+    <div class="nature-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Scenery & Landscapes
+      </div>
+      <div class="image-grid">
+        <img src="/img/nature/n35.jpg" alt="nature 35" onclick="openFullscreen(this.src)">
+        <img src="/img/nature/n37.jpg" alt="nature 37" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
   </div>
 
-  <!-- Dots -->
+
+  <!-- Nature Dots -->
   <div id="nature-dots" style="text-align: center; margin-top: 20px;">
     <span class="dot active" onclick="showNaturePage(0)"></span>
     <span class="dot" onclick="showNaturePage(1)"></span>
-    <!-- Add more span.dot elements as needed -->
+    <span class="dot" onclick="showNaturePage(2)"></span>
+    <span class="dot" onclick="showNaturePage(3)"></span>
+    <span class="dot" onclick="showNaturePage(4)"></span>
+    <span class="dot" onclick="showNaturePage(5)"></span>
   </div>
 
-  <!-- Fullscreen Overlay (Shared) -->
+  <!-- Fullscreen Overlay (shared across galleries) -->
   <div id="fullscreenOverlay" aria-hidden="true">
     <div id="fullscreenContent">
       <button id="backButton" onclick="closeFullscreen()" aria-label="Go Back">Back</button>
@@ -339,29 +414,69 @@
     </div>
   </div>
 </section>
+<style>
+  .nature-image-page {
+    display: none;
+  }
 
- <!-- Food -->
+  .nature-image-page.active {
+    display: block;
+  }
+</style>
+<!-- Script for Nature -->
+<script>
+let natureCurrentPage = 0;
+const naturePages = document.querySelectorAll('.nature-image-page');
+const natureDots = document.querySelectorAll('#nature-dots .dot');
+
+function showNaturePage(index) {
+  // Wrap index around like a circle
+  if (index < 0) index = naturePages.length - 1;
+  if (index >= naturePages.length) index = 0;
+
+  // Update visibility
+  naturePages.forEach(page => page.classList.remove('active'));
+  natureDots.forEach(dot => dot.classList.remove('active'));
+
+  naturePages[index].classList.add('active');
+  natureDots[index].classList.add('active');
+  natureCurrentPage = index;
+}
+
+function natureNextPage() {
+  showNaturePage(natureCurrentPage + 1);
+}
+
+function naturePrevPage() {
+  showNaturePage(natureCurrentPage - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  showNaturePage(natureCurrentPage);
+});
+</script>
+
+<!-- Food -->
 <section id="food-photography-gallery" style="position: relative;">
-<!-- Navigation Arrows -->
-<div id="prevBtn" onclick="prevPage()" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); cursor: pointer;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
-    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-  </svg>
-</div>
+  <!-- Navigation Arrows -->
+  <div id="foodPrevBtn" onclick="foodPrevPage()" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </div>
 
-<div id="nextBtn" onclick="nextPage()" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
-    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-  </svg>
-</div>
+  <div id="foodNextBtn" onclick="foodNextPage()" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+    </svg>
+  </div>
 
-  
-  <!-- Image Pages -->
+  <!-- Food Image Pages -->
   <div id="food-image-pages" style="text-align: center;">
-    <!-- Example Page 1 -->
+    <!-- Page 1 -->
     <div class="food-image-page active">
-      <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center; padding-top:80px;">
-        Food Photography
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+The Taste Lens
       </div>
       <div class="image-grid">
         <img src="/img/food/f1.jpg" alt="food 1" onclick="openFullscreen(this.src)">
@@ -373,19 +488,61 @@
       </div>
     </div>
 
-    <!-- Add more .food-image-page blocks as needed -->
+    <!-- Page 2 -->
+    <div class="food-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+The Taste Lens
+      </div>
+      <div class="image-grid">
+        <img src="/img/food/f14.jpg" alt="food 7" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f16.jpg" alt="food 8" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f18.jpg" alt="food 9" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f19.jpg" alt="food 10" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f20.jpg" alt="food 11" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f21.jpg" alt="food 12" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+        <!-- Page 3 -->
+    <div class="food-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+The Taste Lens
+      </div>
+      <div class="image-grid">
+        <img src="/img/food/f22.jpg" alt="food 7" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f23.jpg" alt="food 8" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f24.jpg" alt="food 9" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f25.jpg" alt="food 10" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f26.jpg" alt="food 11" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f29.jpg" alt="food 12" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+            <!-- Page 4 -->
+    <div class="food-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+The Taste Lens
+      </div>
+      <div class="image-grid">
+        <img src="/img/food/f7.jpg" alt="food 7" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f11.jpg" alt="food 8" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f17.jpg" alt="food 9" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f27.jpg" alt="food 10" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f28.jpg" alt="food 11" onclick="openFullscreen(this.src)">
+        <img src="/img/food/f30.jpg" alt="food 12" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
   </div>
 
-
-
-  <!-- Dots -->
+  <!-- Food Dots -->
   <div id="food-dots" style="text-align: center; margin-top: 20px;">
     <span class="dot active" onclick="showFoodPage(0)"></span>
     <span class="dot" onclick="showFoodPage(1)"></span>
-    <!-- Add more span.dot elements as needed -->
+    <span class="dot" onclick="showFoodPage(2)"></span>
+    <span class="dot" onclick="showFoodPage(3)"></span>
   </div>
 
-  <!-- Fullscreen Overlay (Shared) -->
+  <!-- Fullscreen Overlay (shared across galleries) -->
   <div id="fullscreenOverlay" aria-hidden="true">
     <div id="fullscreenContent">
       <button id="backButton" onclick="closeFullscreen()" aria-label="Go Back">Back</button>
@@ -394,11 +551,202 @@
         <button onclick="zoomImage(-0.1)" aria-label="Zoom Out">−</button>
       </div>
       <div id="fullscreenScrollContainer">
-        <img id="fullscreenImage" src="" alt="Fullscreen Art Preview">
+        <img id="fullscreenImage" src="" alt="Fullscreen Food Preview">
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .food-image-page {
+    display: none;
+  }
+
+  .food-image-page.active {
+    display: block;
+  }
+</style></style>
+
+<!-- Script for food -->
+<script>
+  let currentFoodPage = 0;
+
+  function showFoodPage(index) {
+    const pages = document.querySelectorAll('.food-image-page');
+    const dots = document.querySelectorAll('#food-dots .dot');
+
+    if (index >= pages.length) index = 0;
+    if (index < 0) index = pages.length - 1;
+
+    pages.forEach((page, i) => {
+      page.classList.toggle('active', i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+
+    currentFoodPage = index;
+  }
+
+  function foodNextPage() {
+    showFoodPage(currentFoodPage + 1);
+  }
+
+  function foodPrevPage() {
+    showFoodPage(currentFoodPage - 1);
+  }
+</script>
+
+
+<!-- Sweet Food -->
+<section id="sweet-photography-gallery" style="position: relative;">
+  <!-- Navigation Arrows -->
+  <div id="sweetPrevBtn" onclick="sweetPrevPage()" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </div>
+
+  <div id="sweetNextBtn" onclick="sweetNextPage()" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#333" viewBox="0 0 24 24">
+      <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+    </svg>
+  </div>
+
+  <!-- Sweet Image Pages -->
+  <div id="sweet-image-pages" style="text-align: center;">
+    <!-- Page 1 -->
+    <div class="sweet-image-page active">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Sweet Selections
+      </div>
+      <div class="image-grid">
+        <img src="/img/sweet/s1.jpg" alt="sweet 1" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s2.jpg" alt="sweet 2" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s3.jpg" alt="sweet 3" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s4.jpg" alt="sweet 4" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s5.jpg" alt="sweet 5" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s21.jpg" alt="sweet 21" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="sweet-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Sweet Selections
+      </div>
+      <div class="image-grid">
+        <img src="/img/sweet/s7.jpg" alt="sweet 7" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s8.jpg" alt="sweet 8" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s9.jpg" alt="sweet 9" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s10.jpg" alt="sweet 10" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s11.jpg" alt="sweet 11" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s12.jpg" alt="sweet 12" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="sweet-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Sweet Selections
+      </div>
+      <div class="image-grid">
+        <img src="/img/sweet/s13.jpg" alt="sweet 13" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s15.jpg" alt="sweet 15" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s18.jpg" alt="sweet 18" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s19.jpg" alt="sweet 19" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s14.jpg" alt="sweet 14" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s16.jpg" alt="sweet 16" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s17.jpg" alt="sweet 17" onclick="openFullscreen(this.src)">
+      </div>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="sweet-image-page">
+      <div class="image-text" style="padding-top: 80px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+Sweet Selections
+      </div>
+      <div class="image-grid">
+        <img src="/img/sweet/s6.jpg" alt="sweet 6" onclick="openFullscreen(this.src)">
+        <img src="/img/sweet/s20.jpg" alt="sweet 20" onclick="openFullscreen(this.src)">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sweet Dots -->
+  <div id="sweet-dots" style="text-align: center; margin-top: 20px;">
+    <span class="dot active" onclick="showSweetPage(0)"></span>
+    <span class="dot" onclick="showSweetPage(1)"></span>
+    <span class="dot" onclick="showSweetPage(2)"></span>
+    <span class="dot" onclick="showSweetPage(3)"></span>
+  </div>
+
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreenOverlay" aria-hidden="true">
+    <div id="fullscreenContent">
+      <button id="backButton" onclick="closeFullscreen()" aria-label="Go Back">Back</button>
+      <div id="zoomControls">
+        <button onclick="zoomImage(0.1)" aria-label="Zoom In">＋</button>
+        <button onclick="zoomImage(-0.1)" aria-label="Zoom Out">−</button>
+      </div>
+      <div id="fullscreenScrollContainer">
+        <img id="fullscreenImage" src="" alt="Fullscreen Sweet Preview">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sweet-image-page {
+    display: none;
+  }
+
+  .sweet-image-page.active {
+    display: block;
+  }
+</style>
+
+<!-- Script for sweet food -->
+<script>
+  let currentSweetPage = 0;
+
+  function showSweetPage(index) {
+    const pages = document.querySelectorAll('.sweet-image-page');
+    const dots = document.querySelectorAll('#sweet-dots .dot');
+
+    if (index >= pages.length) index = 0;
+    if (index < 0) index = pages.length - 1;
+
+    pages.forEach((page, i) => {
+      page.classList.toggle('active', i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+
+    currentSweetPage = index;
+  }
+
+  function sweetNextPage() {
+    showSweetPage(currentSweetPage + 1);
+  }
+
+  function sweetPrevPage() {
+    showSweetPage(currentSweetPage - 1);
+  }
+
+  // Optional: Initialize the first page on load
+  document.addEventListener("DOMContentLoaded", () => {
+    showSweetPage(0);
+  });
+</script>
+
+
+
+
 
 
 
@@ -594,6 +942,7 @@
 
 </style>
 
+<!-- Script for zoom images -->
 <script>
   let zoomLevel = 1;
 
@@ -646,6 +995,7 @@
   });
 </script>
 
+<!-- Script for Random photos -->
 <!-- Script -->
 <script>
 let currentImagePage = 0;
