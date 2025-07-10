@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CLSR - Pencil and Paper</title>
+  <title>CLSR - Graphic Design</title>
 
   <!-- Favicon (Updated path) -->
   <link rel="icon" href="/img/logo/clsr_logo-browser.png" type="image/x-icon">
@@ -25,10 +25,11 @@
 <!-- animation.php -->
 <?php include 'header.php'; ?>
 
+
 <section class="hero-section" style="
   position: relative;
   min-height: 100vh;
-  background: url('/img/logo/pencilandpaper.jpg') center center / cover no-repeat;
+  background: url('/img/logo/graphics.jpg') center center / cover no-repeat;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -48,9 +49,9 @@
       line-height: 1.3;
       font-weight: bold;
       margin: 0;
-      text-shadow: 2px 2px 4px black;
+            text-shadow: 2px 2px 4px black;
     ">
-      Before pixels, there was this<br>
+      Creative visuals made with purpose<br>
     </h1>
     <a href="#explore" style="
       display: inline-block;
@@ -77,13 +78,12 @@
   font-size: 1.5rem; 
   margin-top: 5rem; 
   text-align: center; 
-  max-width: 800px; 
+  max-width: 840px; 
   margin-left: auto; 
   margin-right: auto; 
   line-height: 1.8;
 ">
-  <p>Welcome to a raw, tactile creative experience with pencil and paper!
-  Before the clicks, before the code this is where every idea takes its first breath. Pencil and paper offer an honest space for sketching, scribbling, and shaping thoughts with unfiltered expression. Here’s where the real magic begins:</p>
+  <p>Welcome to my digital design space, where creativity meets function. I specialize in crafting professional visuals for businesses, school projects, and personal branding. Every design is tailored to communicate your message clearly, elevate your brand, and leave a lasting impression.</p>
 </section>
 <!-- Smooth Scroll CSS (add this to <head> or <style>) -->
 <style>
@@ -105,74 +105,10 @@
   margin-right: auto; 
   line-height: 1.8;
   font-weight: bold;">
-  PENCIL AND PAPER
+  GRAPHIC DESIGN
   </p>  
+
 </section>
-
-<!-- Back to Top Button -->
-<button id="back-to-top" title="Go to top">↑</button>
-
-<script>
-  // Get the button
-  const backToTopButton = document.getElementById("back-to-top");
-
-  // When the user scrolls down 100px from the top of the document, show the button
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  };
-
-  // When the user clicks the button, scroll to the top of the document
-  backToTopButton.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
-
-<style>
-
-
-/* Style for Back to Top button */
-#back-to-top {
-  position: fixed;
-  bottom: 30px; /* Adjusted distance from the bottom */
-  right: 30px; /* Adjusted distance from the right */
-  background: linear-gradient(135deg, #f0b7a3, #ff87ab); /* Gradient background */
-  color: white;
-  border: none;
-  border-radius: 50%; /* Fully rounded button */
-  width: 70px; /* Set width for a perfect circle */
-  height: 70px; /* Set height equal to width */
-  padding: 0; /* Remove padding to maintain circular shape */
-  font-size: 20px; /* Adjusted icon size */
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: all 0.3s ease; /* Smooth transition */
-  z-index: 999; /* Ensures the button stays on top */
-  display: none; /* Initially hidden */
-  text-align: center;
-  line-height: 50px; /* Center the icon vertically */
-}
-
-#back-to-top:hover {
-  background: linear-gradient(135deg, #ff87ab, #f0b7a3); /* Reversed gradient on hover */
-  transform: scale(1.1); /* Slightly enlarge the button on hover */
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-#back-to-top:focus {
-  outline: none; /* Removes the outline when the button is clicked */
-}
-
-/* Icon Styling */
-#back-to-top::before {
-  content: '↑'; /* Set the icon */
-  font-size: 30px; /* Increase the font size */
-}
-
-</style>
 
 <section id="digital-art-gallery" style="position: relative;">
 
@@ -195,85 +131,97 @@
   <!-- Page 1 -->
   <div class="image-page active">
     <div class="image-grid">
-    <img src="/img/sketch/sketch 1.jpg" alt="Art 1" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 2.jpg" alt="Art 2" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 3.jpg" alt="Art 3" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 4.jpg" alt="Art 7" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 5.jpg" alt="Art 5" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 6.jpg" alt="Art 6" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g6.png" alt="Design 1" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g2.png" alt="Design 2" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g3.png" alt="Design 3" onclick="openFullscreen(this.src)">
     </div>
   </div>
 
   <!-- Page 2 -->
   <div class="image-page">
     <div class="image-grid">
-    <img src="/img/sketch/sketch 7.jpg" alt="Art 4" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 8.jpg" alt="Art 8" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 10.jpg" alt="Art 10" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 11.jpg" alt="Art 11" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 12.jpg" alt="Art 12" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 13.jpg" alt="Art 13" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g4.png" alt="Design 4" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g7.png" alt="Design 5" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/g1.png" alt="Design 6" onclick="openFullscreen(this.src)">
     </div>
   </div>
 
-  <!-- Page 3 -->
-  <div class="image-page">
-    <div class="image-grid">
-    <img src="/img/sketch/sketch 9.jpg" alt="Art 14" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 14.jpg" alt="Art 17" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 15.jpg" alt="Art 18" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 16.jpg" alt="Art 19" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 17.jpg" alt="Art 20" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 18.jpg" alt="Art 22" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 19.jpg" alt="Art 23" onclick="openFullscreen(this.src)">
-    </div>
-  </div>
 
-  <!-- Page 4 -->
-    <div class="image-page">
-    <div class="image-grid">
-    <img src="/img/sketch/sketch 20.jpg" alt="Art 21" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 21.jpg" alt="Art 16" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 22.jpg" alt="Art 24" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 23.jpg" alt="Art 25" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 24.jpg" alt="Art 26" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 25.jpg" alt="Art 27" onclick="openFullscreen(this.src)">
-    </div>
+<!-- Page: Meat Gallery -->
+<div class="image-page">
+  <div class="image-text" style="position: static; top: auto; left: auto; transform: none; color: #222; background: none; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; text-align: center;">
+    Anatomy of Meat - Marketing Design Gallery
   </div>
-
-    <!-- Page 5 -->
-    <div class="image-page">
-    <div class="image-grid">
-    <img src="/img/sketch/sketch 26.jpg" alt="Art 15" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 27.jpg" alt="Art 16" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 29.jpg" alt="Art 50" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 30.jpg" alt="Art 17" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 32.jpg" alt="Art 19" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 33.jpg" alt="Art 20" onclick="openFullscreen(this.src)">
-    </div>
-  </div>
-
-      <!-- Page 6 -->
-      <div class="image-page">
-    <div class="image-grid">
-    <img src="/img/sketch/sketch 28.jpg" alt="Art 15" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 34.jpg" alt="Art 16" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 35.jpg" alt="Art 50" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 36.jpg" alt="Art 17" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 37.jpg" alt="Art 19" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 38.jpg" alt="Art 20" onclick="openFullscreen(this.src)">
-    </div>
-  </div>
-
-      <!-- Page 7 -->
-    <div class="image-page">
-    <div class="image-grid">
-    <img src="/img/sketch/sketch 39.jpg" alt="Art 15" onclick="openFullscreen(this.src)">
-    <img src="/img/sketch/sketch 31.jpg" alt="Art 20" onclick="openFullscreen(this.src)">
-    </div>
-  </div>
-
+  <img 
+    src="/img/graphics/meat/1.png" 
+    alt="Meat Gallery Preview" 
+    onclick="openGallery('meat')" 
+    style="max-width: 50vw; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.3s ease;"
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'"
+  >
 </div>
+
+<!-- Folder Gallery Modal: Meat -->
+<div id="meat" class="folder-gallery">
+  <div class="folder-content">
+    <button class="close-folder" onclick="closeGallery('meat')">×</button>
+    <div class="folder-images">
+      <img src="/img/graphics/meat/1.png" alt="meat 1" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/2.png" alt="meat 2" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/3.png" alt="meat 3" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/4.png" alt="meat 4" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/5.png" alt="meat 5" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/6.png" alt="meat 6" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/7.png" alt="meat 7" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/8.png" alt="meat 8" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/meat/9.png" alt="meat 9" onclick="openFullscreen(this.src)">
+    </div>
+  </div>
+</div>
+
+<!-- Page: Inventory Gallery -->
+<div class="image-page inventory-page">
+  <div class="inventory-text">
+    Inventory - Page Guide 
+  </div>
+  <img 
+    src="/img/graphics/inventory/branches - add.png" 
+    alt="Inventory Gallery Preview" 
+    class="inventory-preview-img" 
+    onclick="openGallery('inventory')" 
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'"
+  >
+</div>
+
+
+
+
+<!-- Folder Gallery Modal: Meat -->
+<div id="inventory" class="folder-gallery">
+  <div class="folder-content">
+    <button class="close-folder" onclick="closeGallery('inventory')">×</button>
+    <div class="folder-images">
+      <img src="/img/graphics/inventory/branches - add.png" alt="meat 1" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/branches - delete.png" alt="meat 2" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/branches - edit.png" alt="meat 3" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/company profile - edit.png" alt="meat 4" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/critical stocks _ needs.png" alt="meat 5" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/daily count - add.png" alt="meat 6" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/daily inventory report.png" alt="meat 7" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/daily usage reports.png" alt="meat 8" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/delivery - add.png" alt="meat 9" onclick="openFullscreen(this.src)">
+      
+      <img src="/img/graphics/inventory/finished goods - add.png" alt="meat 6" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/finished goods - delete.png" alt="meat 7" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/finished goods - duplicate.png" alt="meat 8" onclick="openFullscreen(this.src)">
+      <img src="/img/graphics/inventory/finished goods - edit.png" alt="meat 9" onclick="openFullscreen(this.src)">
+    </div>
+  </div>
+</div>
+
+
 
 <!-- Dots -->
 <div id="dots" style="text-align: center; margin-top: 20px;">
@@ -281,9 +229,6 @@
   <span class="dot" onclick="showPage(1)"></span>
   <span class="dot" onclick="showPage(2)"></span>
   <span class="dot" onclick="showPage(3)"></span>
-  <span class="dot" onclick="showPage(4)"></span>
-  <span class="dot" onclick="showPage(5)"></span>
-  <span class="dot" onclick="showPage(6)"></span>
 </div>
 
 <!-- Fullscreen Overlay -->
@@ -304,12 +249,128 @@
     </div>
   </div>
 </div>
-
-
 </section>
 
+<script>
+function openGallery(id) {
+  document.getElementById(id).classList.add('active');
+}
+
+function closeGallery(id) {
+  document.getElementById(id).classList.remove('active');
+}
+</script>
 <!-- Styles -->
 <style>
+/* Inventory Specific Styling */
+.inventory-page {
+  text-align: center;
+}
+
+.inventory-text {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inventory-preview-img {
+  max-width: 20vw;  /* Smaller than general preview */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional: Shrink modal images just for inventory */
+#inventory .folder-images img {
+  width: 50vw; /* Smaller thumbnails */
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#inventory .folder-images img:hover {
+  transform: scale(1.05);
+}
+
+
+.folder-gallery {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.folder-gallery.active {
+  display: flex;
+}
+
+.folder-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  text-align: center;
+}
+
+.folder-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.folder-images img {
+  width: 60vw;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.folder-images img:hover {
+  transform: scale(1.05);
+}
+
+.close-folder {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background:none;
+  color: #333;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.close-folder:hover {
+  background: #333;
+  color: white;
+}
+
+
+
 .image-page {
     display: none;
 }
@@ -606,7 +667,7 @@ Scroll down, click around, and discover the skills, style, and soul behind every
   margin-right: auto; 
   line-height: 1.8;
   font-weight: bold;">
-    BEHIND THE LINES
+    BEHIND THE DESIGN
   </p>  
 
   <p style="
@@ -618,44 +679,30 @@ Scroll down, click around, and discover the skills, style, and soul behind every
         margin-left: auto; 
         margin-right: auto; 
         line-height: 1.8;">
-Every line begins with a whisper. Every shade is a moment captured by hand. This is pencil and paper raw, honest, and timeless. Where ideas flow in graphite and dreams take shape in silence. Soft textures. Subtle gradients. Pure expression.</p>
-<div class="row justify-content-center text-center" style="padding-bottom: 30px; gap: 20px;">
-    <div class="col-md-5 d-flex flex-column align-items-center">
-        <div style="min-width: 120px;">
-            <img src="/img/sketch/coleen.jpg" alt="coleen" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
-            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Coleen</p>
-            <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
-              Bold and nostalgic, Coleen pencils glide like memory on the page. Each stroke is confident, with a soft grit that captures motion in stillness. From whispers of shading to defined edges, this is a pencil that sings with soul.</p>
-        </div>
-    </div>
+Behind every design is thoughtful strategy and the right tools. Each visual I create is a blend of intention, structure, and creativity crafted to communicate clearly, inspire emotion, and elevate every brand, project, or idea it touches.</p>
 
-        <div class="col-md-5 d-flex flex-column align-items-center">
-        <div style="min-width: 120px;">
-            <img src="/img/sketch/raffine.png" alt="raffine" style="width: 150px; height: 100px; margin-bottom: 10px; margin-top: 10px;">
-            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Raffine</p>
-            <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
-Smooth like silk, delicate like thought. Raffiné pencils are for when finesse matters. They blend like shadows at sunset and capture subtlety with elegance. It’s the poetry pencil, the one you use when emotion takes the lead.</p>
-        </div>
+<div class="row justify-content-center text-center" style="padding-bottom: 30px;">
+  <!-- Column 1: Canva -->
+  <div class="col-md-6 d-flex flex-column align-items-center">
+    <div style="max-width: 300px;">
+      <img src="/img/logo/canva.png" alt="Canva" style="width: 150px; height: auto; margin: 15px 0 10px;">
+      <p style="font-size: 1.1rem; font-weight: bold;">Canva</p>
+      <p style="font-size: 1rem; padding-top: 10px;">
+Canva allows me to transform ideas into impactful visuals merging creativity with functionality to craft designs that communicate clearly, captivate emotionally, and connect meaningfully.      </p>
     </div>
+  </div>
 
-        <div class="col-md-5 d-flex flex-column align-items-center">
-        <div style="min-width: 120px;">
-            <img src="/img/sketch/staedtler.png" alt="staedtler" style="width: 130px; height: auto; margin-bottom: 10px; margin-top: 10px;">
-            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Staedtler</p>
-            <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
-Precision in wood and graphite. Staedtler is the architect of form and control the choice when structure meets creativity. Clean lines, technical grace, and a weight that feels just right. A classic that never slips.</p>
-        </div>
+  <!-- Column 2: Sketchbook -->
+  <div class="col-md-6 d-flex flex-column align-items-center">
+    <div style="max-width: 300px;">
+      <img src="/img/logo/sketchbook.PNG" alt="Sketchbook" style="width: 150px; height: auto; margin: 15px 0 10px;">
+      <p style="font-size: 1.1rem; font-weight: bold;">Sketchbook</p>
+      <p style="font-size: 1rem; padding-top: 10px;">
+Sketchbook is where my designs take root raw concepts, fluid strokes, and unfiltered creativity flowing straight from the stylus to the screen.</p>
     </div>
-
-            <div class="col-md-5 d-flex flex-column align-items-center">
-        <div style="min-width: 120px;">
-            <img src="/img/sketch/uslon.png" alt="uslon" style="width: 130px; height: 130px; margin-bottom: 10px; margin-top: 10px;">
-            <p style="font-size: 1.1rem; margin: 0; font-weight: bold;">Uslon</p>
-            <p style="font-size: 1rem; margin: 0; max-width: 300px; padding-top: 8px;">
-Uslon holds mystery in its marks rich tones, deep blacks, and a quiet resilience. It’s the underdog in your toolkit, but it pulls above its weight. When you're in the zone, Uslon just gets it done no flash, all feeling.</p>
-        </div>
-    </div>
+  </div>
 </div>
+
 
 <!-- Back to Top Button -->
 <button id="back-to-top" title="Go to top">↑</button>
@@ -733,4 +780,3 @@ if (file_exists('home/pricing-section.php')) {
 <?php include 'footer.php'; ?>
 </body>
 </html>
-

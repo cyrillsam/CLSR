@@ -51,7 +51,7 @@
       margin: 0;
             text-shadow: 2px 2px 4px black;
     ">
-      Sketch. Click. Create.<br>
+      Sketch, Click, Create<br>
     </h1>
     <a href="#explore" style="
       display: inline-block;

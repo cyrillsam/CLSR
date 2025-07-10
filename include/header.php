@@ -58,6 +58,7 @@
                     <ul class="desktop-sub-menu">
                       <li><a href="/include/animation.php">Animation</a></li>
                       <li><a href="/include/digital-arts.php">Digital Arts</a></li>
+                      <li><a href="/include/graphics.php">Graphic Design</a></li>
                       <li><a href="/include/pencil-paper.php">Pencil and Paper</a></li>
                       <li><a href="/include/ui-design.php">UI Design</a></li>
                       <li><a href="/include/photography.php">Photography</a></li>
@@ -103,6 +104,7 @@
               <ul class="list-unstyled ps-3 mb-2">
                 <li><a href="<?php echo '/include/animation.php'; ?>" class="sub-link">Animation</a></li>
                 <li><a href="<?php echo '/include/digital-arts.php'; ?>" class="sub-link">Digital Arts</a></li>
+                <li><a href="<?php echo '/include/graphics.php'; ?>" class="sub-link">Graphic Design</a></li>
                 <li><a href="<?php echo '/include/pencil-paper.php'; ?>" class="sub-link">Pencil and Paper</a></li>
                 <li><a href="<?php echo '/include/ui-design.php'; ?>" class="sub-link">UI Design</a></li>
                 <li><a href="<?php echo '/include/photography.php'; ?>" class="sub-link">Photography</a></li>

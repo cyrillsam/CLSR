@@ -49,7 +49,7 @@
       margin: 0;
       text-shadow: 2px 2px 4px black;
     ">
-      Design isn’t decoration. It’s direction.<br>
+      Design isn’t decoration. It’s direction<br>
     </h1>
     <a href="#explore" style="
       display: inline-block;

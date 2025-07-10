@@ -49,8 +49,7 @@
   margin: 0;
   text-shadow: 2px 2px 4px black;
 ">
-  Your lens is your language.<br>
-  Every shot, is a sentence.
+  Your lens is your language <br>
 </h1>
 
     <a href="#explore" style="
