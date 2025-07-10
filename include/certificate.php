@@ -139,7 +139,6 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
 
   <div id="2022" class="gallery-section">
     <img src="/img/certificates/21.png" alt="Certificate" onclick="openFullscreen(this.src)">
-    <img src="/img/certificates/22.png" alt="Certificate" onclick="openFullscreen(this.src)">
     <img src="/img/certificates/25.png" alt="Certificate" onclick="openFullscreen(this.src)">
     <img src="/img/certificates/26.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
   </div>
