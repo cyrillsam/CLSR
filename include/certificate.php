@@ -118,7 +118,7 @@
         margin-left: auto; 
         margin-right: auto; 
         line-height: 1.8;">
-With each certificate earned and project completed, I’ve built a skill set that blends logic, precision, and artistry perfect for delivering innovative and user-focused digital solutions.
+Each certificate shown here was earned during seminars and academic sessions that built my practical knowledge. I’ve built a skill set that blends logic, precision, and artistry perfect for delivering innovative and user-focused digital solutions.
 
 Feel free to explore the proof of my dedication below. Every badge, every lesson, every skill tells part of my story.</p> 
 
@@ -134,12 +134,12 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
 
   <!-- GALLERY SECTIONS -->
   <div id="2021" class="gallery-section active">
-    <img src="/img/certificates/22.png" alt="Certificate" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/21.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
   </div>
 
   <div id="2022" class="gallery-section">
-    <img src="/img/certificates/21.png" alt="Certificate" onclick="openFullscreen(this.src)">
-    <img src="/img/certificates/25.png" alt="Certificate" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/22.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/25.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
     <img src="/img/certificates/26.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
   </div>
 
@@ -173,6 +173,7 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
     <img src="/img/certificates/7.jpg" alt="Certificate 1" onclick="openFullscreen(this.src)"  />
     <img src="/img/certificates/8.jpg" alt="Certificate 2"onclick="openFullscreen(this.src)"  />
     <img src="/img/certificates/11.jpg" alt="Certificate 3" onclick="openFullscreen(this.src)" />
+        <img src="/img/certificates/29.jpg" alt="Certificate 3" onclick="openFullscreen(this.src)" />
   </div>
   <!-- Add more years the same way -->
 </div>
