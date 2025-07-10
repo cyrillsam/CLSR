@@ -134,13 +134,13 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
 
   <!-- GALLERY SECTIONS -->
   <div id="2021" class="gallery-section active">
-    <img src="/img/certificates/21.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/21.jpg" alt="Certificate 21" onclick="openFullscreen(this.src)">
   </div>
 
   <div id="2022" class="gallery-section">
-    <img src="/img/certificates/22.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
-    <img src="/img/certificates/25.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
-    <img src="/img/certificates/26.jpg" alt="Certificate" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/22.jpg" alt="Certificate 22" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/25.jpg" alt="Certificate 25" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/26.jpg" alt="Certificate 26" onclick="openFullscreen(this.src)">
   </div>
 
    <div id="2023" class="gallery-section">
@@ -152,28 +152,29 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
   </div>
 
   <div id="2024" class="gallery-section">
-    <img src="/img/certificates/6.jpg" alt="Certificate 1"onclick="openFullscreen(this.src)"  />
-    <img src="/img/certificates/9.jpg" alt="Certificate 2" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/10.jpg" alt="Certificate 3" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/12.jpg" alt="Certificate 4" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/13.jpg" alt="Certificate 5" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/14.jpg" alt="Certificate 6" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/15.png" alt="Certificate 7" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/16.png" alt="Certificate 8" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/17.png" alt="Certificate 9" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/18.png" alt="Certificate 10" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/19.png" alt="Certificate 11" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/20.png" alt="Certificate 12" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/24.png" alt="Certificate 13" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/27.jpg" alt="Certificate 14" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/28.jpg" alt="Certificate 15" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/6.jpg" alt="Certificate 6"onclick="openFullscreen(this.src)"  />
+    <img src="/img/certificates/9.jpg" alt="Certificate 9" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/10.jpg" alt="Certificate 10" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/12.jpg" alt="Certificate 12" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/13.jpg" alt="Certificate 13" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/14.jpg" alt="Certificate 14" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/15.jpg" alt="Certificate 15" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/16.jpg" alt="Certificate 16" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/17.png" alt="Certificate 17" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/18.jpg" alt="Certificate 18" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/19.png" alt="Certificate 19" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/20.png" alt="Certificate 20" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/24.jpg" alt="Certificate 24" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/23.jpg" alt="Certificate 23" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/27.jpg" alt="Certificate 27" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/28.jpg" alt="Certificate 28" onclick="openFullscreen(this.src)" />
   </div>
 
   <div id="2025" class="gallery-section">
-    <img src="/img/certificates/7.jpg" alt="Certificate 1" onclick="openFullscreen(this.src)"  />
-    <img src="/img/certificates/8.jpg" alt="Certificate 2"onclick="openFullscreen(this.src)"  />
-    <img src="/img/certificates/11.jpg" alt="Certificate 3" onclick="openFullscreen(this.src)" />
-        <img src="/img/certificates/29.jpg" alt="Certificate 3" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/7.jpg" alt="Certificate 7" onclick="openFullscreen(this.src)"  />
+    <img src="/img/certificates/8.jpg" alt="Certificate 8"onclick="openFullscreen(this.src)"  />
+    <img src="/img/certificates/11.jpg" alt="Certificate 11" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/29.jpg" alt="Certificate 29" onclick="openFullscreen(this.src)" />
   </div>
   <!-- Add more years the same way -->
 </div>
@@ -321,6 +322,23 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
     }
   }
 
+  
+/* 📱 Unique Mobile View (1 large full-width image per row) */
+@media (max-width: 600px) {
+  .gallery-section {
+    flex-direction: column;
+    padding: 15px 15px 60px;
+    gap: 16px;
+  }
+
+  .gallery-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    object-fit: contain;
+  }
+}
   /* Fullscreen Overlay */
   #fullscreenOverlay {
     position: fixed;

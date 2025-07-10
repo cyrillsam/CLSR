@@ -262,6 +262,39 @@ function closeGallery(id) {
 </script>
 <!-- Styles -->
 <style>
+
+
+@media (max-width: 800px) {
+  #meat.folder-gallery .folder-content {
+    width: 95vw;
+    max-height: 85vh;
+    padding: 16px 12px;
+    overflow-y: auto;
+  }
+
+  #meat .folder-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #meat .folder-images img {
+    width: 80vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #meat .close-folder {
+    top: 10px;
+    right: 12px;
+    font-size: 24px;
+    padding: 4px 10px;
+  }
+}
+
+
+
 /* Inventory Specific Styling */
 .inventory-page {
   text-align: center;
@@ -301,6 +334,40 @@ function closeGallery(id) {
   transform: scale(1.05);
 }
 
+/* 🌟 Responsive Adjustments */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .inventory-preview-img {
+    max-width: 30vw;
+  }
+
+  #inventory .folder-images img {
+    width: 70vw;
+  }
+}
+
+/* 📱 Mobile View */
+@media (max-width: 500px) {
+  .inventory-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .inventory-preview-img {
+    max-width: 80%;
+    margin: 10px auto;
+    border-radius: 14px;
+  }
+
+  #inventory .folder-images img {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+  }
+}
 
 .folder-gallery {
   display: none; /* Hidden by default */

@@ -24,7 +24,7 @@
             text-shadow: 2px 2px 4px black;
     ">
       From Imagination to Reality,<br>
-      Bringing Art to Life.
+      Bringing Art to Life
     </h1>
     <a href="#explore" style="
       display: inline-block;
