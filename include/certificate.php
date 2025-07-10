@@ -163,7 +163,7 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
     <img src="/img/certificates/17.png" alt="Certificate 17" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/18.jpg" alt="Certificate 18" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/19.png" alt="Certificate 19" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/20.png" alt="Certificate 20" onclick="openFullscreen(this.src)" />
+    <img src="/img/certificates/20.PNG" alt="Certificate 20" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/24.jpg" alt="Certificate 24" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/23.jpg" alt="Certificate 23" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/27.jpg" alt="Certificate 27" onclick="openFullscreen(this.src)" />
