@@ -141,6 +141,7 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
     <img src="/img/certificates/22.jpg" alt="Certificate 22" onclick="openFullscreen(this.src)">
     <img src="/img/certificates/25.jpg" alt="Certificate 25" onclick="openFullscreen(this.src)">
     <img src="/img/certificates/26.jpg" alt="Certificate 26" onclick="openFullscreen(this.src)">
+    <img src="/img/certificates/23.jpg" alt="Certificate 23" onclick="openFullscreen(this.src)" />
   </div>
 
    <div id="2023" class="gallery-section">
@@ -164,7 +165,6 @@ Feel free to explore the proof of my dedication below. Every badge, every lesson
     <img src="/img/certificates/18.jpg" alt="Certificate 18" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/19.png" alt="Certificate 19" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/20.PNG" alt="Certificate 20" onclick="openFullscreen(this.src)" />
-    <img src="/img/certificates/24.jpg" alt="Certificate 24" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/23.jpg" alt="Certificate 23" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/27.jpg" alt="Certificate 27" onclick="openFullscreen(this.src)" />
     <img src="/img/certificates/28.jpg" alt="Certificate 28" onclick="openFullscreen(this.src)" />
