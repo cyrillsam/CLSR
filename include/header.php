@@ -113,7 +113,7 @@
             </div>
           </li>
 
-          <li><a href="/about.php" class="primary-nav-link">About Me</a></li>
+          <li><a href="/include/about.php" class="primary-nav-link">About Me</a></li>
           <li><a href="/contact.php" class="primary-nav-link">Contact Us</a></li>
         </ul>
       </div>
