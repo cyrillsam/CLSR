@@ -566,7 +566,7 @@ The Taste Lens
   .food-image-page.active {
     display: block;
   }
-</style></style>
+</style>
 
 <!-- Script for food -->
 <script>
