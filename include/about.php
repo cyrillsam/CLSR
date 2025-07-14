@@ -396,7 +396,7 @@ Equipped with a diverse set of technical and creative tools, I bring together de
     <div class="image-text">Mobile App Development</div>
     <div class="image-grid">
       <img src="/img/aboutme_web/11.png" alt="Swift" onclick="showZoom(this.src)">
-      <img src="/img/aboutme_web/13.png" alt="Kotlin" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/10.png" alt="Kotlin" onclick="showZoom(this.src)">
     </div>
   </div>
 
