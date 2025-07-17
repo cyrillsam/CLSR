@@ -409,6 +409,23 @@ Equipped with a diverse set of technical and creative tools, I bring together de
     </div>
   </div>
 
+    <div class="image-page">
+    <div class="image-text">Data Analysis & Visualization</div>
+    <div class="image-grid">
+      <img src="/img/aboutme_web/18.png" alt="Microsoft Excel" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/19.png" alt="Draw.io" onclick="showZoom(this.src)">
+    </div>
+  </div>
+
+    <div class="image-page">
+    <div class="image-text">Software Tools</div>
+    <div class="image-grid">
+      <img src="/img/aboutme_web/22.png" alt="Word" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/21.png" alt="PowerPoint" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/23.png" alt="Docs" onclick="showZoom(this.src)">
+    </div>
+  </div>
+
   <!-- Sweet Dots -->
   <div id="sweet-dots" style="text-align: center; margin-top: 20px;">
     <span class="dot active" onclick="showSkillPage(0)"></span>
@@ -416,6 +433,8 @@ Equipped with a diverse set of technical and creative tools, I bring together de
     <span class="dot" onclick="showSkillPage(2)"></span>
     <span class="dot" onclick="showSkillPage(3)"></span>
     <span class="dot" onclick="showSkillPage(4)"></span>
+    <span class="dot" onclick="showSkillPage(5)"></span>
+    <span class="dot" onclick="showSkillPage(6)"></span>
   </div>
 
   <!-- Fullscreen Overlay -->
@@ -473,9 +492,6 @@ Equipped with a diverse set of technical and creative tools, I bring together de
     showSkillPage(0);
   });
 </script>
-
-
- 
 
 
 <style>
@@ -636,6 +652,558 @@ function hideZoom() {
     showSweetPage(0);
   });
 </script>
+
+
+<p style="
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin: 5rem auto;
+  text-align: left;
+  max-width: 1000px;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-weight: bold;
+">
+  CREATIVE SKILLS
+</p>
+
+
+
+<section id="creative-skills-gallery" style="position: relative; padding-bottom: 50px;">
+  <!-- Prev Arrow -->
+  <div id="prevCreativeBtn" onclick="prevCreativePage()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </div>
+
+  <!-- Next Arrow -->
+  <div id="nextCreativeBtn" onclick="nextCreativePage()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+    </svg>
+  </div>
+
+  <!-- Creative Skills Grid Pages -->
+  <div class="image-page-creative active">
+    <div class="image-text">Graphic Design</div>
+    <div class="image-grid-creative">
+      <img src="/img/aboutme_web/28.png" alt="Figma" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/24.png" alt="Canva" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/26.png" alt="Sketchbook" onclick="showZoom(this.src)">
+      <img src="/img/aboutme_web/25.png" alt="iArtbook" onclick="showZoom(this.src)">
+    </div>
+  </div>
+
+  <div class="image-page-creative">
+    <div class="image-text">Multimedia Editing</div>
+    <div class="image-grid-creative">
+      <img src="/img/aboutme_web/27.png" alt="CapCut" onclick="showZoom(this.src)">
+    </div>
+  </div>
+
+  <!-- Creative Dots -->
+  <div id="creative-dots" style="text-align: center; margin-top: 20px;">
+    <span class="dot-creative active" onclick="showCreativePage(0)"></span>
+    <span class="dot-creative" onclick="showCreativePage(1)"></span>
+  </div>
+</section>
+
+
+<style>
+  .image-page-creative { display: none; }
+  .image-page-creative.active { display: block; }
+
+.image-grid-creative {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+
+.image-grid-creative img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+  z-index: 1;
+}
+
+.image-grid-creative img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05) saturate(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* Responsive Columns */
+@media (max-width: 768px) {
+  .image-grid-creative {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .image-grid-creative {
+    grid-template-columns: 1fr;
+  }
+}
+
+  /* Navigation Arrows */
+  #prevCreativeBtn, #nextCreativeBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+  }
+  #prevCreativeBtn {
+    left: 5px;
+  }
+  #nextCreativeBtn {
+    right: 5px;
+  }
+  #prevCreativeBtn svg, #nextCreativeBtn svg {
+    width: 40px;
+    height: 40px;
+    fill: #444;
+  }
+
+  /* Creative Dots */
+  .dot-creative {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 30%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .dot-creative.active {
+    background-color: #444;
+  }
+
+  /* Responsive Columns */
+  @media (max-width: 768px) {
+    .image-grid-creative {
+      column-count: 2;
+    }
+  }
+  @media (max-width: 480px) {
+    .image-grid-creative {
+      column-count: 1;
+    }
+  }
+</style>
+
+<script>
+  let currentCreativePage = 0;
+  const creativePages = document.querySelectorAll('.image-page-creative').length;
+
+  function showCreativePage(index) {
+    const pages = document.querySelectorAll('.image-page-creative');
+    const dots = document.querySelectorAll('#creative-dots .dot-creative');
+
+    if (index >= pages.length) index = 0;
+    if (index < 0) index = pages.length - 1;
+
+    pages.forEach((page, i) => page.classList.toggle('active', i === index));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+
+    currentCreativePage = index;
+  }
+
+  function nextCreativePage() {
+    showCreativePage(currentCreativePage + 1);
+  }
+
+  function prevCreativePage() {
+    showCreativePage(currentCreativePage - 1);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showCreativePage(0);
+  });
+</script>
+
+
+<style>
+
+.image-page {
+  display: none;
+}
+.image-page.active {
+  display: block;
+}
+
+.image-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px auto 10px;
+  text-align: center;
+  color: #222;
+}
+
+.image-grid {
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  break-inside: avoid;
+  position: relative;
+  cursor: zoom-in;
+  z-index: 1;
+}
+
+/* ✨ Hover effect to simulate viewing */
+.image-grid img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05) saturate(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* Navigation Arrows */
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+#prevBtn {
+  left: 5px;
+}
+#nextBtn {
+  right: 5px;
+}
+#prevBtn svg, #nextBtn svg {
+  width: 40px;
+  height: 40px;
+  fill: #444;
+}
+
+/* 📸 Simplified Zoom Overlay */
+#simpleZoomOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+#simpleZoomOverlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Columns */
+@media (max-width: 768px) {
+  .image-grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .image-grid {
+    column-count: 1;
+  }
+}
+
+</style>
+
+<script>
+  function showZoom(src) {
+  const overlay = document.getElementById('simpleZoomOverlay');
+  const image = document.getElementById('zoomedImage');
+  image.src = src;
+  overlay.style.display = 'flex';
+}
+
+function hideZoom() {
+  document.getElementById('simpleZoomOverlay').style.display = 'none';
+}
+
+</script>
+
+
+<!-- 🌈 Responsive Full-Width Image Section -->
+<section class="aboutme-fullwidth-image" style="position: relative;">
+  <img src="/img/logo/scrollaround.png" alt="scroll">
+  <div class="scroll-overlay-text animated-glow-text">
+    Scroll down, click around, and discover the skills, style, and soul behind every project.
+  </div>
+</section>
+
+<style>
+/* 🎈 Enhanced Floating Animation */
+@keyframes floatText {
+  0%   { transform: translate(-50%, -50%) translateY(0); }
+  50%  { transform: translate(-50%, -50%) translateY(-20px); } /* More bounce */
+  100% { transform: translate(-50%, -50%) translateY(0); }
+}
+
+/* 🌟 Gentle Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
+                 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* 🌠 Apply Animations */
+.animated-glow-text {
+  animation:
+    floatText 3s ease-in-out infinite,
+    glow 4s ease-in-out infinite;
+}
+
+.scroll-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 90%;
+  max-width: 850px;
+  pointer-events: none;
+  line-height: 1.4;
+  transform: translate(-50%, -50%);
+}
+
+/* 📱 Responsive Text Sizes */
+@media (max-width: 768px) {
+  .scroll-overlay-text {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .scroll-overlay-text {
+    font-size: 1rem;
+  }
+}
+
+/* 🖼 Fullwidth Image Container */
+.aboutme-fullwidth-image {
+  width: 100%;
+  margin: 0; /* No extra spacing */
+  padding: 0; /* Ensure no padding too */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.aboutme-fullwidth-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* 🔥 Removes bottom space */
+  object-fit: contain;
+  margin: 0;       /* Just in case */
+  padding: 0;
+  border: 0;
+}
+</style>
+
+
+<!-- 🌟 Goals & Dreams Section -->
+<section class="dreams-section">
+  <div class="dreams-container">
+    <h2 class="dreams-title">GOAL & DREAMS</h2>
+    <p class="dreams-description">
+      My goal is to continuously grow as a digital artist and web designer, creating meaningful and innovative solutions that inspire and connect people. I dream of building platforms and experiences that blend creativity, technology, and human connection, leaving a positive impact in the digital world and beyond.
+    </p>
+
+    <div class="dreams-interest-grid">
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 1">
+        <span>Creative innovation</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 2">
+        <span>Tech-driven problem solving</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 3">
+        <span>Meaningful user experience</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Continuous learning</span>
+      </div>
+            <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Visual storytelling</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Impactful design</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Collaborative growth</span>
+      </div>
+       <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Purposeful development</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Empowering others through tech</span>
+      </div>
+      <div class="dreams-interest-box">
+        <img src="/img/logo/target.png" alt="Logo 4">
+        <span>Building something that matters</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 🌙 Unique Goals & Dreams Section Styling */
+.dreams-section {
+  background-color: #1A1B1D;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.dreams-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dreams-title {
+  padding-top: 70px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.dreams-description {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin: 0 auto 3rem auto;
+  max-width: 1000px;
+  color: #ffffff;
+}
+
+/* 💡 Interest Boxes */
+.dreams-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.dreams-interest-box {
+  background-color: #fafafa;
+  color: #1A1B1D;
+  border-radius: 60px;
+  padding: 25px 35px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 700px;
+  transition: box-shadow 0.3s ease;
+}
+
+.dreams-interest-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.dreams-interest-box span {
+  flex: 1;
+  text-align: left;
+}
+
+/* 📱 Responsive Refinement */
+@media (max-width: 768px) {
+  .dreams-interest-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .dreams-interest-box {
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 20px;
+    gap: 15px;
+    font-size: 0.9rem;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .dreams-interest-box img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dreams-interest-box span {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .dreams-title {
+    font-size: 1.7rem;
+  }
+
+  .dreams-description {
+    font-size: 1.1rem;
+  }
+}
+</style>
+
+
+
 
 
 
