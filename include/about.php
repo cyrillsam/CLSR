@@ -12,8 +12,7 @@
   <!-- Google Fonts - Raleway -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800&display=swap" rel="stylesheet">
 
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="/css_style.css">
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -1131,6 +1130,7 @@ function hideZoom() {
 
 /* 💡 Interest Boxes */
 .dreams-interest-grid {
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
@@ -1202,7 +1202,429 @@ function hideZoom() {
 }
 </style>
 
+<!-- 🌟 Education -->
+<section class="edu-sec">
+  <div class="edu-sec-title">EDUCATION</div>
 
+  <div id="edu-sec-gallery">
+    <!-- Prev Arrow -->
+    <div id="edu-sec-prev-btn" onclick="eduPrevPage()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+      </svg>
+    </div>
+
+    <!-- Next Arrow -->
+    <div id="edu-sec-next-btn" onclick="eduNextPage()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+      </svg>
+    </div>
+
+    <!-- Carousel Pages -->
+    <div class="edu-sec-page active">
+      <div class="edu-sec-text">College</div>
+      <div class="edu-sec-grid">
+        <img src="/img/education/27.png" alt="College" onclick="eduShowZoom(this.src)">
+      </div>
+    </div>
+
+    <div class="edu-sec-page">
+      <div class="edu-sec-text">Senior High School</div>
+      <div class="edu-sec-grid">
+        <img src="/img/education/28.png" alt="Senior High School" onclick="eduShowZoom(this.src)">
+      </div>
+    </div>
+
+    <div class="edu-sec-page">
+      <div class="edu-sec-text">Middle School</div>
+      <div class="edu-sec-grid">
+        <img src="/img/education/29.png" alt="Middle School" onclick="eduShowZoom(this.src)">
+      </div>
+    </div>
+
+    <div class="edu-sec-page">
+      <div class="edu-sec-text">Elementary School</div>
+      <div class="edu-sec-grid">
+        <img src="/img/education/30.png" alt="Elementary" onclick="eduShowZoom(this.src)">
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div id="edu-sec-dots">
+      <span class="edu-sec-dot active" onclick="eduShowPage(0)"></span>
+      <span class="edu-sec-dot" onclick="eduShowPage(1)"></span>
+      <span class="edu-sec-dot" onclick="eduShowPage(2)"></span>
+      <span class="edu-sec-dot" onclick="eduShowPage(3)"></span>
+    </div>
+  </div>
+
+  <!-- Zoom Overlay -->
+  <div id="edu-sec-zoom-overlay" onclick="eduHideZoom()">
+    <img id="edu-sec-zoomed-image" src="" alt="Zoomed Education">
+  </div>
+</section>
+
+<style>
+.edu-sec {
+  position: relative;
+  background-image: url('/img/logo/edu_bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 130vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  overflow: hidden;
+}
+
+.edu-sec-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+}
+
+#edu-sec-gallery {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.edu-sec-page { display: none; }
+.edu-sec-page.active { display: block; }
+
+.edu-sec-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.edu-sec-grid img {
+  justify-content: center;
+  width: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.edu-sec-grid img:hover {
+  transform: scale(1.05);
+}
+
+.edu-sec-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#edu-sec-prev-btn, #edu-sec-next-btn {
+  padding-top: 60px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#edu-sec-prev-btn { left: 10px; }
+#edu-sec-next-btn { right: 10px; }
+
+#edu-sec-prev-btn svg, #edu-sec-next-btn svg {
+  fill: white;
+  width: 40px;
+  height: 40px;
+}
+
+#edu-sec-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.edu-sec-dot {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 30%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.edu-sec-dot.active {
+    background-color: #444;
+}
+
+/* Zoom Overlay */
+#edu-sec-zoom-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+#edu-sec-zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+  .edu-sec {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .edu-sec-title {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .edu-sec-grid img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  #edu-sec-prev-btn,
+  #edu-sec-next-btn {
+    top: 50%;
+    padding: 5px;
+  }
+
+  #edu-sec-prev-btn svg,
+  #edu-sec-next-btn svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .edu-sec-text {
+    font-size: 1.2rem;
+  }
+
+  .edu-sec-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+  }
+
+  #edu-sec-dots {
+    margin-top: 8px;
+  }
+
+  #edu-sec-zoom-overlay img {
+    max-width: 95%;
+    max-height: 85%;
+  }
+}
+
+
+</style>
+
+<script>
+let eduSecCurrentPage = 0;
+const eduSecPages = document.querySelectorAll('.edu-sec-page');
+const eduSecDots = document.querySelectorAll('.edu-sec-dot');
+
+function eduShowPage(index) {
+  eduSecPages.forEach((page, i) => {
+    page.classList.toggle('active', i === index);
+    eduSecDots[i].classList.toggle('active', i === index);
+  });
+  eduSecCurrentPage = index;
+}
+
+function eduNextPage() {
+  eduSecCurrentPage = (eduSecCurrentPage + 1) % eduSecPages.length;
+  eduShowPage(eduSecCurrentPage);
+}
+
+function eduPrevPage() {
+  eduSecCurrentPage = (eduSecCurrentPage - 1 + eduSecPages.length) % eduSecPages.length;
+  eduShowPage(eduSecCurrentPage);
+}
+
+function eduShowZoom(src) {
+  const overlay = document.getElementById('edu-sec-zoom-overlay');
+  const image = document.getElementById('edu-sec-zoomed-image');
+  image.src = src;
+  overlay.style.display = 'flex';
+}
+
+function eduHideZoom() {
+  document.getElementById('edu-sec-zoom-overlay').style.display = 'none';
+}
+
+// Auto-switch every 4 seconds
+setInterval(() => {
+  eduNextPage();
+}, 4000);
+
+// Init
+eduShowPage(0);
+
+</script>
+
+
+
+ <!-- Title & Description -->
+<p class="work-title">WORK EXPERIENCE</p>
+<p class="work-subtitle">
+  Each role taught me something new, sharpened my skills, and fueled my growth.
+</p>
+
+<!-- Work Experience Section -->
+<section class="work_bg">
+  <div class="work-bg-wrapper">
+    <div class="work-bg-content">
+      <img src="/img/logo/w_one.png" alt="Delivery Icon" class="work-icon">
+      <div class="work-bg-text">
+        <h2>SES Delivery Service</h2>
+        <p>Customer Transactions Encoder & Delivery Assistant. Ensured timely and secure delivery of packages and important documents to clients while maintaining high service quality.</p>
+      </div>
+    </div>
+
+    <div class="work-bg-content">
+      <img src="/img/logo/w_two.png" alt="Illustrator Icon" class="work-icon">
+      <div class="work-bg-text">
+        <h2>Digital Illustrator</h2>
+        <p>Digital marketing strategies to reach more clients through websites and social media.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STYLES -->
+<style>
+/* Title & Subtitle */
+.work-title {
+  font-size: 2rem;
+  margin: 5rem auto 2rem auto;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.work-subtitle {
+  font-size: 1.3rem;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  max-width: 1000px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Background Section */
+.work_bg {
+  background-image: url('/img/logo/work_bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper */
+.work-bg-wrapper {
+  padding-left: 90px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Experience Content */
+.work-bg-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.work-icon {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 3px;
+}
+
+/* Text */
+.work-bg-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.work-bg-text h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.3rem 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.work-bg-text p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .work-title {
+    font-size: 1.5rem;
+    margin: 3rem 1rem 1rem 1rem;
+  }
+
+  .work-subtitle {
+    font-size: 1.1rem;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  .work-bg-wrapper {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .work-bg-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-icon {
+    margin: 0 0 10px 0;
+  }
+
+  .work-bg-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .work-bg-text p {
+    font-size: 0.95rem;
+  }
+}
+</style>
 
 
 
