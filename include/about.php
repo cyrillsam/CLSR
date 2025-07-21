@@ -1113,7 +1113,7 @@ function hideZoom() {
 }
 
 .dreams-title {
-  padding-top: 70px;
+  padding-top: px;
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -1202,61 +1202,46 @@ function hideZoom() {
 }
 </style>
 
+
 <!-- 🌟 Education -->
 <section class="edu-sec">
   <div class="edu-sec-title">EDUCATION</div>
 
-  <div id="edu-sec-gallery">
-    <!-- Prev Arrow -->
-    <div id="edu-sec-prev-btn" onclick="eduPrevPage()">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-      </svg>
-    </div>
-
-    <!-- Next Arrow -->
-    <div id="edu-sec-next-btn" onclick="eduNextPage()">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-      </svg>
-    </div>
-
-    <!-- Carousel Pages -->
-    <div class="edu-sec-page active">
-      <div class="edu-sec-text">College</div>
-      <div class="edu-sec-grid">
-        <img src="/img/education/27.png" alt="College" onclick="eduShowZoom(this.src)">
+  <div id="edu-sec-carousel">
+    <div class="edu-sec-slider">
+      <div class="edu-sec-page">
+        <div class="edu-sec-text">College</div>
+        <div class="edu-sec-grid">
+          <img src="/img/education/27.png" alt="College" onclick="eduShowZoom(this.src)">
+        </div>
+      </div>
+      <div class="edu-sec-page">
+        <div class="edu-sec-text">Senior High School</div>
+        <div class="edu-sec-grid">
+          <img src="/img/education/28.png" alt="Senior High School" onclick="eduShowZoom(this.src)">
+        </div>
+      </div>
+      <div class="edu-sec-page">
+        <div class="edu-sec-text">Middle School</div>
+        <div class="edu-sec-grid">
+          <img src="/img/education/29.png" alt="Middle School" onclick="eduShowZoom(this.src)">
+        </div>
+      </div>
+      <div class="edu-sec-page">
+        <div class="edu-sec-text">Elementary School</div>
+        <div class="edu-sec-grid">
+          <img src="/img/education/30.png" alt="Elementary" onclick="eduShowZoom(this.src)">
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="edu-sec-page">
-      <div class="edu-sec-text">Senior High School</div>
-      <div class="edu-sec-grid">
-        <img src="/img/education/28.png" alt="Senior High School" onclick="eduShowZoom(this.src)">
-      </div>
-    </div>
-
-    <div class="edu-sec-page">
-      <div class="edu-sec-text">Middle School</div>
-      <div class="edu-sec-grid">
-        <img src="/img/education/29.png" alt="Middle School" onclick="eduShowZoom(this.src)">
-      </div>
-    </div>
-
-    <div class="edu-sec-page">
-      <div class="edu-sec-text">Elementary School</div>
-      <div class="edu-sec-grid">
-        <img src="/img/education/30.png" alt="Elementary" onclick="eduShowZoom(this.src)">
-      </div>
-    </div>
-
-    <!-- Dots -->
-    <div id="edu-sec-dots">
-      <span class="edu-sec-dot active" onclick="eduShowPage(0)"></span>
-      <span class="edu-sec-dot" onclick="eduShowPage(1)"></span>
-      <span class="edu-sec-dot" onclick="eduShowPage(2)"></span>
-      <span class="edu-sec-dot" onclick="eduShowPage(3)"></span>
-    </div>
+  <!-- Dots -->
+  <div id="edu-sec-dots">
+    <span class="edu-sec-dot active" onclick="eduShowPage(0)"></span>
+    <span class="edu-sec-dot" onclick="eduShowPage(1)"></span>
+    <span class="edu-sec-dot" onclick="eduShowPage(2)"></span>
+    <span class="edu-sec-dot" onclick="eduShowPage(3)"></span>
   </div>
 
   <!-- Zoom Overlay -->
@@ -1282,33 +1267,46 @@ function hideZoom() {
 }
 
 .edu-sec-title {
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 1rem;
   text-align: center;
   color: white;
 }
 
-#edu-sec-gallery {
+#edu-sec-carousel {
   width: 100%;
   max-width: 1000px;
-  margin-top: 2rem;
+  overflow: hidden;
   position: relative;
+  margin-top: 2rem;
 }
 
-.edu-sec-page { display: none; }
-.edu-sec-page.active { display: block; }
+.edu-sec-slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.edu-sec-page {
+  min-width: 100%;
+  flex-shrink: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.edu-sec-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
 .edu-sec-grid {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 1rem;
 }
 
 .edu-sec-grid img {
-  justify-content: center;
   width: 400px;
   border-radius: 20px;
   cursor: pointer;
@@ -1319,30 +1317,7 @@ function hideZoom() {
   transform: scale(1.05);
 }
 
-.edu-sec-text {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-#edu-sec-prev-btn, #edu-sec-next-btn {
-  padding-top: 60px;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  padding: 10px;
-  cursor: pointer;
-}
-
-#edu-sec-prev-btn { left: 10px; }
-#edu-sec-next-btn { right: 10px; }
-
-#edu-sec-prev-btn svg, #edu-sec-next-btn svg {
-  fill: white;
-  width: 40px;
-  height: 40px;
-}
-
+/* Dots */
 #edu-sec-dots {
   text-align: center;
   margin-top: 10px;
@@ -1380,16 +1355,11 @@ function hideZoom() {
   border-radius: 10px;
 }
 
-/* mobile view */
+/* Mobile */
 @media (max-width: 768px) {
   .edu-sec {
     height: auto;
     padding: 2rem 1rem;
-  }
-
-  .edu-sec-title {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
   }
 
   .edu-sec-grid img {
@@ -1397,84 +1367,71 @@ function hideZoom() {
     max-width: 320px;
   }
 
-  #edu-sec-prev-btn,
-  #edu-sec-next-btn {
-    top: 50%;
-    padding: 5px;
-  }
-
-  #edu-sec-prev-btn svg,
-  #edu-sec-next-btn svg {
-    width: 30px;
-    height: 30px;
-  }
-
   .edu-sec-text {
     font-size: 1.2rem;
   }
-
-  .edu-sec-dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 3px;
-  }
-
-  #edu-sec-dots {
-    margin-top: 8px;
-  }
-
-  #edu-sec-zoom-overlay img {
-    max-width: 95%;
-    max-height: 85%;
-  }
 }
-
-
 </style>
 
 <script>
-let eduSecCurrentPage = 0;
-const eduSecPages = document.querySelectorAll('.edu-sec-page');
-const eduSecDots = document.querySelectorAll('.edu-sec-dot');
+document.addEventListener('DOMContentLoaded', function () {
+  const eduSlider = document.querySelector('.edu-sec-slider');
+  const dots = document.querySelectorAll('.edu-sec-dot');
+  const totalPages = dots.length; // 4 real slides
+  let eduCurrentIndex = 0;
 
-function eduShowPage(index) {
-  eduSecPages.forEach((page, i) => {
-    page.classList.toggle('active', i === index);
-    eduSecDots[i].classList.toggle('active', i === index);
+  function eduShowPage(index, animate = true) {
+    if (!animate) eduSlider.style.transition = 'none';
+    else eduSlider.style.transition = 'transform 0.6s ease-in-out';
+
+    eduSlider.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === (index % totalPages));
+    });
+
+    eduCurrentIndex = index;
+  }
+
+  function autoSlide() {
+    eduCurrentIndex++;
+    eduShowPage(eduCurrentIndex);
+
+    if (eduCurrentIndex === totalPages) {
+      // After transition ends, reset instantly to start (no animation)
+      setTimeout(() => {
+        eduShowPage(0, false);
+      }, 700); // slightly longer than transition
+    }
+  }
+
+  // Start the carousel
+  eduShowPage(eduCurrentIndex);
+  setInterval(autoSlide, 4000);
+
+  // Zoom
+  window.eduShowZoom = function (src) {
+    const overlay = document.getElementById('edu-sec-zoom-overlay');
+    const image = document.getElementById('edu-sec-zoomed-image');
+    image.src = src;
+    overlay.style.display = 'flex';
+  };
+
+  window.eduHideZoom = function () {
+    document.getElementById('edu-sec-zoom-overlay').style.display = 'none';
+  };
+
+  // Dot click
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      eduShowPage(index);
+    });
   });
-  eduSecCurrentPage = index;
-}
-
-function eduNextPage() {
-  eduSecCurrentPage = (eduSecCurrentPage + 1) % eduSecPages.length;
-  eduShowPage(eduSecCurrentPage);
-}
-
-function eduPrevPage() {
-  eduSecCurrentPage = (eduSecCurrentPage - 1 + eduSecPages.length) % eduSecPages.length;
-  eduShowPage(eduSecCurrentPage);
-}
-
-function eduShowZoom(src) {
-  const overlay = document.getElementById('edu-sec-zoom-overlay');
-  const image = document.getElementById('edu-sec-zoomed-image');
-  image.src = src;
-  overlay.style.display = 'flex';
-}
-
-function eduHideZoom() {
-  document.getElementById('edu-sec-zoom-overlay').style.display = 'none';
-}
-
-// Auto-switch every 4 seconds
-setInterval(() => {
-  eduNextPage();
-}, 4000);
-
-// Init
-eduShowPage(0);
-
+});
 </script>
+
+
+
 
 
 

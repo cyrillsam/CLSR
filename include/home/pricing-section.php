@@ -13,7 +13,7 @@
         <p class="contact-subtext">Drop a message below, and let’s create something unforgettable.</p>
 
         <!-- 💌 Form with confirmation -->
-        <form class="contact-form" action="https://formsubmit.co/samsonclaire061@gmail.com" method="POST" onsubmit="showConfirmation(event)">
+        <form class="contact-form" action="https://formspree.io/f/mkgzoeyb" method="POST" onsubmit="showConfirmation(event)">
           <!-- hidden FormSubmit options -->
           <input type="hidden" name="_subject" value="New Message from Website">
           <input type="hidden" name="_captcha" value="false">
